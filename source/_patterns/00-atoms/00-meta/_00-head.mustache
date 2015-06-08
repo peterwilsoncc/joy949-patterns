@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html class="{{ htmlClass }}">
+<html class="{{ htmlClass }} no-js">
 	<head>
 		<title>{{ title }}</title>
 		<meta charset="UTF-8">
@@ -10,6 +10,55 @@
 		<!-- Begin Pattern Lab (Required for Pattern Lab to run properly) -->
 		{% pattern-lab-head %}
 		<!-- End Pattern Lab -->
+
+
+		{{# runJs }}{{! runJs == true (so all is good) }}
+
+		<!-- for site -->
+		<script>
+		
+		JOY_config = {
+			"siteHome"   : "/",
+			"assetsPath" : "/assets"
+		};
+		
+		(function( window, undefined ){
+			window.JOY = window.JOY || {};
+
+			var document = window.document,
+				H = document.documentElement,
+				JOY = window.JOY;
+			
+			H.className=H.className.replace(/\bno-js\b/,'')+' js';
+			
+			JOY.config = JOY_config;
+			
+		}( window ));
+		</script>
+		
+		<!-- for styleguide only -->
+		<script>
+		
+		window.JOYPL = window.JOYPL || {};
+		JOYPL.config = {
+			runJS : true
+		};
+		
+		</script>
+		{{/ runJs }}
+		
+		{{^ runJs }}{{! runJs == false (so emulating no-js mode) }}
+		<!-- for styleguide only -->
+		<script>
+		
+		window.JOYPL = window.JOYPL || {};
+		JOYPL.config = {
+			runJS : false
+		};
+		
+		</script>
+		{{/ runJs }}
+
 	
 	</head>
 	<body class="{{ bodyClass }}">	
