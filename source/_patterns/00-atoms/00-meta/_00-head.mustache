@@ -16,48 +16,21 @@
 
 		<!-- for site -->
 		<script>
-		
-		JOY_config = {
+		JOY949_config = {
 			"siteHome"   : "/",
 			"assetsPath" : "/assets"
 		};
-		
-		(function( window, undefined ){
-			window.JOY = window.JOY || {};
-
-			var document = window.document,
-				H = document.documentElement,
-				JOY = window.JOY,
-				mustard = false;
-	
-			// cuts the mustard?
-			// http://responsivenews.co.uk/post/18948466399/cutting-the-mustard
-			if (    'querySelector'    in document
-			     && 'localStorage'     in window
-			     && 'addEventListener' in window ) {
-				 mustard = true;
-			}
-	
-			JOY.mustard = mustard; // expose mustard check.
-	
-			if ( false === mustard ) {
-				// Browser no good.
-				return;
-			}
-	
-			// Browser is good
-			H.className=H.className.replace(/\bno-js\b/,'')+' js';
-			
-			JOY.config = JOY_config;
-			
-		}( window ));
+		</script>
+		<script src="/assets/js/head-inline.js"></script>
+		<script>
+		JOY949.loadJS( JOY949.config.assetsPath + '/js/functions.js?{{ cacheBuster }}' );
 		</script>
 		
 		<!-- for styleguide only -->
-		<script>
+		<script id="joy949pl">
 		
-		window.JOYPL = window.JOYPL || {};
-		JOYPL.config = {
+		window.JOY949PL = window.JOY949PL || {};
+		JOY949PL.config = {
 			runJS : true
 		};
 		
@@ -68,15 +41,14 @@
 		<!-- for styleguide only -->
 		<script>
 		
-		window.JOYPL = window.JOYPL || {};
-		JOYPL.config = {
+		window.JOY949PL = window.JOY949PL || {};
+		JOY949PL.config = {
 			runJS : false
 		};
 		
 		</script>
 		{{/ runJs }}
 
-	
 	</head>
 	<body class="{{ bodyClass }}">	
 		
