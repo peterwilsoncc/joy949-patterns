@@ -1,12 +1,9 @@
-/*jshint latedef: false */
-(window.JOY949 = function( window, undefined ){
-	/*jshint unused: false*/
+window.JOY949 = (function( window, undefined ){
 
 	var document = window.document,
 		HTML = document.documentElement,
 		scripts = [],
 		mustard = false,
-		loadJS,
 		i;
 
 

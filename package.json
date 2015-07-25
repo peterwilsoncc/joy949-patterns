@@ -1,0 +1,27 @@
+{
+  "name": "joy949-patterns",
+  "version": "0.0.1",
+  "description": "Joy 94.9 Pattern Library",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/peterwilsoncc/joy949-patterns.git"
+  },
+  "author": "",
+  "bugs": {
+    "url": "https://github.com/peterwilsoncc/joy949-patterns/issues"
+  },
+  "homepage": "https://github.com/peterwilsoncc/joy949-patterns#readme",
+  "devDependencies": {
+    "grunt": "^0.4.5",
+    "grunt-contrib-clean": "^0.6.0",
+    "grunt-contrib-concat": "^0.5.1",
+    "grunt-contrib-copy": "^0.8.0",
+    "grunt-contrib-jshint": "^0.11.2",
+    "grunt-contrib-watch": "^0.6.1",
+    "grunt-sass": "^1.0.0",
+    "grunt-shell": "^1.1.2"
+  }
+}
