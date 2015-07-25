@@ -32,6 +32,13 @@ module.exports = function(grunt) {
 		},
 
 
+		// jshint config 
+		jshint : {
+			options: grunt.file.readJSON('.jshintrc'),
+			files: ['source/assets/js/*.js']
+		},
+
+
 		// grunt sass config
 		sass: {
 			options : {
@@ -78,6 +85,7 @@ module.exports = function(grunt) {
 	// Plugins
 	grunt.loadNpmTasks('grunt-contrib-clean');
 	grunt.loadNpmTasks('grunt-contrib-copy');
+	grunt.loadNpmTasks('grunt-contrib-jshint');
 	grunt.loadNpmTasks('grunt-contrib-watch');
 	grunt.loadNpmTasks('grunt-shell');
 	grunt.loadNpmTasks('grunt-sass');
@@ -85,4 +93,5 @@ module.exports = function(grunt) {
 	// Tasks
 	grunt.registerTask('build', ['clean:all', 'shell:patternlabWithAssets']);
 	grunt.registerTask('default', ['build','watch']);
+	grunt.registerTask('precommit', ['jshint', 'build']);
 };
