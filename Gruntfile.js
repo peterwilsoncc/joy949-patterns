@@ -46,7 +46,9 @@ module.exports = function(grunt) {
 			},
 			dist: {
 				files: {
-					'source/assets/css/style.css' : 'source/assets/css/style.scss'
+					'source/assets/css/style.css' : 'source/assets/css/style.scss',
+					'source/assets/css/style.lte8.css' : 'source/assets/css/style.lte8.scss',
+					'source/assets/css/patternlab.css' : 'source/assets/css/patternlab.scss'
 				}
 			}
 		},

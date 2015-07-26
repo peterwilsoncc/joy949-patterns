@@ -1,0 +1,72 @@
+// ************************************
+// Mixins and functions
+// ************************************
+
+// Various mixins and functions used throughout the project.
+
+
+// ------------------------------------
+// Media queries
+// ------------------------------------
+
+// Set a media query in modern browsers.
+// In the lte8 stylesheet, show the content as appropriate.
+
+@mixin mq-minwidth( $minWidth ) {
+	// in modern browsers, wraps content in the media query:
+	// @media ( min-width : $minWidth )
+	// in oldie, just displays the content
+
+	@if ( true == $is_lte8 ) {
+		@content;
+	} @else {
+		@media ( min-width: $minWidth ) {
+			@content;
+		}
+	}
+}
+
+
+@mixin mq-maxwidth( $maxWidth, $include_in_ie8: false ) {
+	// in modern browsers, wraps content in the media query:
+	// @media ( max-width : $maxWidth )
+	// in oldie, the content is not included unless
+	// the second variable is passed as true.
+	
+	// using max-width media queries is less than ideal
+	// as browsers may download resources they do not need.
+	// The browsers using the max-width media queries are 
+	// often phones on bandwidth limited networks.
+	
+	@if ( true == $is_lte8 ) {
+		@if ( true == $include_in_ie8 ) {
+			@content;
+		}
+	} @else {
+		@media ( max-width: $maxWidth ) {
+			@content;
+		}
+	}
+}
+
+// ------------------------------------
+// LTE8 Mixins
+// ------------------------------------
+
+@mixin lte8() {
+	// in modern browsers, no content is shown
+	// in oldie, content is shown
+
+	@if ( true == $is_lte8 ) {
+		@content;
+	} 
+}
+
+@mixin not-lte8() {
+	// in modern browsers, content is shown
+	// in oldie, no content is shown
+
+	@if ( false == $is_lte8 ) {
+		@content;
+	} 
+}
