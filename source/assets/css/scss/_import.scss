@@ -1,0 +1,40 @@
+// ************************************
+// Sass config
+// ************************************
+
+@import "10-config/defaults";  // variables with !default settings
+@import "10-config/variables"; // variables
+@import "10-config/mixins";    // mixins and functions
+
+
+
+// ************************************
+// Base styles
+// ************************************
+
+// These files are mainly element selectors
+
+
+
+// ************************************
+// Components
+// ************************************
+
+// this directory contains most styles used in the
+// project. Each file is named for the component class,
+// indicating the namespace selectors use.
+
+// reserve name spaces by adding empty files to the directory
+// they do not need to be imported here but should be noted.
+
+// @import "30-components/u"; // reserve u- namespace for utility classes
+
+
+
+// ************************************
+// Utilities
+// ************************************
+
+// utility classes
+// selectors in these files are namespaced u-
+

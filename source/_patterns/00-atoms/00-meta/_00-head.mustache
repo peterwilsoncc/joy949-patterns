@@ -5,7 +5,13 @@
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width" />
 		
-		<link rel="stylesheet" href="../../assets/css/style.css?{{ cacheBuster }}" media="all" />
+		<!--[if (lte IE 8)&!(IEMobile) ]>
+			<link rel="stylesheet" href="../../assets/css/style.lte8.css?{{ cacheBuster }}" media="all" />
+		<![endif]-->
+		<!--[if (gt IE 8)|(IEMobile)]><!-->
+			<link rel="stylesheet" href="../../assets/css/style.css?{{ cacheBuster }}" media="all" />
+		<!--<![endif]-->	
+		<link rel="stylesheet" href="../../assets/css/patternlab.css?{{ cacheBuster }}" media="all" />
 
 		<!-- Begin Pattern Lab (Required for Pattern Lab to run properly) -->
 		{% pattern-lab-head %}
