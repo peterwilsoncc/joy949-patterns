@@ -7,13 +7,6 @@ module.exports = function(grunt) {
 		pkg: grunt.file.readJSON('package.json'),
 
 
-		// grunt clean config
-		clean : {
-			all    : ['public/patterns/','public/data/','public/assets/'],
-			patterns: ['public/patterns/','public/data/'],
-			assets : ['public/assets/']
-		},
-
 		// grunt copy config
 		copy: {
 			assets : {
@@ -56,10 +49,10 @@ module.exports = function(grunt) {
 
 		// grunt shell config
 		shell: {
-			patternlab: {
+			patternlabPatternsOnly: {
 				command: "php core/builder.php -gp"
 			},
-			patternlabWithAssets: {
+			patternlab: {
 				command: "php core/builder.php -g"
 			},
 		},
@@ -69,14 +62,14 @@ module.exports = function(grunt) {
 		watch: {
 			html: {
 				files: ['source/_patterns/**/*.mustache', 'source/**/*.json'],
-				tasks: ['shell:patternlab'],
+				tasks: ['shell:patternlabPatternsOnly'],
 				options: {
 					spawn: false
 				}
 			},
 			assets : {
 				files: ['source/**/*'],
-				tasks: ['sass', 'clean:assets', 'copy:assets', 'shell:patternlab'],
+				tasks: ['sass', 'shell:patternlab'],
 				options: {
 					spawn: false
 				}
@@ -93,7 +86,7 @@ module.exports = function(grunt) {
 	grunt.loadNpmTasks('grunt-sass');
 
 	// Tasks
-	grunt.registerTask('build', ['clean:all', 'shell:patternlabWithAssets']);
+	grunt.registerTask('build', ['sass', 'shell:patternlab']);
 	grunt.registerTask('default', ['build','watch']);
 	grunt.registerTask('precommit', ['jshint', 'build']);
 };
