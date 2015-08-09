@@ -4,14 +4,16 @@ window.JOY949 = (function( window, undefined ){
 		HTML = document.documentElement,
 		scripts = [],
 		mustard = false,
+		config = window.JOY949_config,
 		i;
 
 
 	function loadJs() {
 		scripts.push.apply( scripts, arguments );
 	}
+
+	loadJs( 'https://ajax.googleapis.com/ajax/libs/webfont/1.5.18/webfont.js' );
 	
-	loadJs( 'https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js' );
 	
 	
 	// cuts the mustard?
@@ -39,6 +41,18 @@ window.JOY949 = (function( window, undefined ){
 
 		// replace script queue
 		initScriptQueue();
+
+		// configure webfonts
+		var webFontClasses = {
+			'opensans' : [ 'n4', 'i4', 'n7', 'i7' ],
+			'oswald'   : [ 'n4', 'n7' ]
+		};
+		
+		var webFontConfig = {
+			google: { families: [ 'Open+Sans:400', 'Oswald:400:latin' ] },
+			active: function() { config.loadSecondaryFonts = true; }
+		};
+		loadWebFonts( webFontConfig, webFontClasses );
 	}
 
 
@@ -67,10 +81,46 @@ window.JOY949 = (function( window, undefined ){
 
 	}
 
+	function loadWebFonts( webFontConfig, webFontClasses ) {
+		var tryFor = 30000; // 30 seconds
+		var tryEvery = 100; // 0.1 seconds
+		
+		if ( 'object' === typeof webFontClasses ) {
+			addClasses( webFontClasses );
+		}
+		tryLoading();
+		
+		function addClasses( webFontClasses ){
+			var classes = [ 'wf-inactive' ];
+			var fontClasses;
+			var i,l;
+			for ( var webFont in webFontClasses ) {
+				fontClasses = webFontClasses[ webFont ];
+				for ( i=0, l=fontClasses.length; i<l; i++ ) {
+					classes.push( 'wf-' + webFont + '-' + fontClasses[i] + '-inactive' );
+				}
+			}
+			HTML.className += ' ' + classes.join( ' ' );
+		}
+		
+		function tryLoading(){
+			if ( tryFor >= 0 ) {
+				tryFor = tryFor - tryEvery;
+				if ( window.WebFont ) {
+					window.WebFont.load( webFontConfig );
+				}
+				else {
+					window.setTimeout( tryLoading, tryEvery );
+				}
+			}
+		}
+	}
+
 	return {
 		mustard: mustard,
 		config: window.JOY949_config,
 		scripts: scripts,
+		loadWebFonts: loadWebFonts,
 		loadJs: loadJs,
 		loadJS: loadJs // allow for typos
 	};

@@ -1,0 +1,15 @@
+// ************************************
+// Font utility classes
+// ************************************
+
+// Utility classes for applying the primary and secondary fonts.
+// Allowing for secondary|secondery typos
+
+.u-Font-Primary {
+	@include primaryFont( !important );
+}
+
+.u-Font-Secondary,
+.u-Font-Secondery { 
+	@include secondaryFont( !important );
+}
