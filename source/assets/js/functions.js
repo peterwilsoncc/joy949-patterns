@@ -16,30 +16,32 @@ window.JOY949 = window.JOY949 || {};
 	}
 
 	initialise();
-	
+
 	function initialise() {
+		localConsole();
 		loadSecondaryFonts();
 	}
 
-	/* build up a console that only runs when using the pattern library */
-	function myConsole( method ) {
-		if ( typeof window.console[method] === 'function' ) {
-			console[method] = function(){
-				if ( JOY949PL && ( true === JOY949PL.debug ) ) {
-					window.console[method].apply( window.console, arguments );
-				}
-			};
+	function localConsole() {
+		/* build up a console that only runs when using the pattern library */
+		function myConsole( method ) {
+			if ( typeof window.console[method] === 'function' ) {
+				console[method] = function(){
+					if ( JOY949PL && ( true === JOY949PL.debug ) ) {
+						window.console[method].apply( window.console, arguments );
+					}
+				};
+			}
+			else {
+				console[method] = window.console[method];
+			}
 		}
-		else {
-			console[method] = window.console[method];
+
+		for( var method in window.console ) {
+			myConsole( method );
 		}
 	}
-
-	for( var method in window.console ) {
-		myConsole( method );
-	}
-	/* end building of console */
-
+	
 	function qsaContext( context ) {
 		if ( undefined === context ) {
 			// the context was not passed, default to document
