@@ -70,3 +70,22 @@
 		@content;
 	} 
 }
+
+// ------------------------------------
+// Font mixins
+// ------------------------------------
+
+
+@mixin primaryFont( $important: null){
+	font-family: sans-serif $important;
+	.wf-opensans-n4-active & {
+		font-family: "Open Sans", sans-serif $important;
+	}
+}
+
+@mixin secondaryFont( $important: null){
+	font-family: sans-serif $important;
+	.wf-oswald-n4-active & {
+		font-family: "Oswald", sans-serif $important;
+	}
+}

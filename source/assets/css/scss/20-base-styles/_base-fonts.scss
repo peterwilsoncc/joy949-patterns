@@ -1,0 +1,19 @@
+// ************************************
+// Base fonts
+// ************************************
+
+// The Joy949 site uses two fonts, initially
+// the page loads with the browser default and
+// is replaced with the webfonts via JavaScript
+
+// PRIMARY FONT
+// Open Sans
+
+body {
+	@include primaryFont();
+	line-height: 1.75;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	@include secondaryFont();
+}

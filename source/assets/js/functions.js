@@ -15,6 +15,12 @@ window.JOY949 = window.JOY949 || {};
 		return;
 	}
 
+	initialise();
+	
+	function initialise() {
+		loadSecondaryFonts();
+	}
+
 	/* build up a console that only runs when using the pattern library */
 	function myConsole( method ) {
 		if ( typeof window.console[method] === 'function' ) {
@@ -61,6 +67,28 @@ window.JOY949 = window.JOY949 || {};
 			return null;
 		}
 		return context.querySelectorAll( selector );
+	}
+
+	function loadSecondaryFonts() {
+		var tryFor = 30000; // 30 seconds;
+		var tryEvery = 100; // 0.1 seconds;
+		var webFontConfig = {
+			google: { families: [ 'Open+Sans:400italic,700,700italic:latin', 'Oswald:700:latin' ] }
+		};
+
+		tryLoading();
+
+		function tryLoading(){
+			if ( tryFor >= 0 ) {
+				tryFor = tryFor - tryEvery;
+				if ( config.loadSecondaryFonts && ( true === config.loadSecondaryFonts ) ) {
+					JOY949.loadWebFonts( webFontConfig );
+				}
+				else {
+					window.setTimeout( tryLoading, tryEvery );
+				}
+			}
+		}
 	}
 
 	// these are to pass early jshint :D
