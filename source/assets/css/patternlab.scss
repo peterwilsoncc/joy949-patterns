@@ -1,4 +1,56 @@
+// ************************************
+// Sass config
+// ************************************
+
+@import "scss/10-config/defaults";  // variables with !default settings
+@import "scss/10-config/variables"; // variables
+@import "scss/10-config/mixins";    // mixins and functions
+
+// ************************************
+// Swatches
+// ************************************
+
 .sg-colors {
 	list-style: none;
 	padding-left: 0;
+}
+
+.sg-swatch--pink {
+	background-color: $joy949_pink;
+}
+
+.sg-swatch--pink-light {
+	background-color: $joy949_pink-light;
+}
+
+.sg-swatch--blue {
+	background-color: $joy949_blue;
+}
+
+.sg-swatch--green {
+	background-color: $joy949_green;
+}
+
+.sg-swatch--black {
+	background-color: $joy949_black;
+}
+
+.sg-swatch--white {
+	background-color: $joy949_white;
+}
+
+.sg-swatch--off-white {
+	background-color: $joy949_offwhite;
+}
+
+.sg-swatch--grey3 {
+	background-color: $joy949_grey3;
+}
+
+.sg-swatch--grey7 {
+	background-color: $joy949_grey7;
+}
+
+.sg-swatch--greya {
+	background-color: $joy949_greya;
 }
