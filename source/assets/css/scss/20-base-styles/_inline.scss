@@ -1,0 +1,35 @@
+// ************************************
+// Inline elements
+// ************************************
+
+// Background underline styles are adapted from compass, which in turn
+// adapted them from Medium.
+
+
+$inline_linkColor: $joy949_pink;
+
+a,
+a:visited {
+	color: $inline_linkColor;
+	text-decoration: none;
+}
+
+	a:hover,
+	a:focus,
+	a:active {
+		text-decoration: none;
+
+		background-image: linear-gradient(to top, transparent 75%,  $inline_linkColor 50%);
+		background-repeat: repeat-x;
+		background-size: 0.25em 0.1875em;
+		background-position: 0 1.125em;
+	}
+
+abbr[title] {
+	border-bottom: 0;
+
+	background-image: linear-gradient(to right, black 50%, transparent 50%);
+	background-repeat: repeat-x;
+	background-size: 0.25em (0.1875 * 0.5em);
+	background-position: 0 1.125em;
+}
