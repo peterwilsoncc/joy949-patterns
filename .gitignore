@@ -8,3 +8,4 @@ latest-change.txt
 *-ck.js
 *-min.js
 *.sass-cache/
+source/assets/js/fontfaceobserver.js

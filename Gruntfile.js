@@ -12,13 +12,12 @@ module.exports = function(grunt) {
 			assets : {
 				files : [
 					{
-					dot: true,
 					expand: true,
-					cwd: 'source/assets/',
+					cwd: 'node_modules/fontfaceobserver',
 					src : [
-						'**'
+						'fontfaceobserver.js'
 					],
-					dest : 'public/assets'
+					dest : 'source/assets/js'
 					}
 				]
 			}
@@ -69,7 +68,7 @@ module.exports = function(grunt) {
 			},
 			assets : {
 				files: ['source/**/*'],
-				tasks: ['sass', 'shell:patternlab'],
+				tasks: ['copy', 'sass', 'shell:patternlab'],
 				options: {
 					spawn: false
 				}
@@ -85,7 +84,7 @@ module.exports = function(grunt) {
 	grunt.loadNpmTasks('grunt-sass');
 
 	// Tasks
-	grunt.registerTask('build', ['sass', 'shell:patternlab']);
+	grunt.registerTask('build', ['copy', 'sass', 'shell:patternlab']);
 	grunt.registerTask('default', ['build','watch']);
 	grunt.registerTask('precommit', ['jshint', 'build']);
 };
