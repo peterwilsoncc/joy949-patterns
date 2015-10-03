@@ -12,7 +12,7 @@ window.JOY949 = (function( window, undefined ){
 		scripts.push.apply( scripts, arguments );
 	}
 
-	loadJs( 'https://ajax.googleapis.com/ajax/libs/webfont/1.5.18/webfont.js' );
+	loadJs( config.assetsPath + '/js/fontfaceobserver.js' );
 	
 	
 	
@@ -37,24 +37,35 @@ window.JOY949 = (function( window, undefined ){
 		}
 		
 		// switch no-js from the HTML element class
-		HTML.className=HTML.className.replace(/\bno-js\b/,'')+' js';
+		HTML.className=HTML.className.replace(/\bno-js\b/,'')+' js wf-inactive';
 
 		// replace script queue
 		initScriptQueue();
 
-		// configure webfonts
-		var webFontClasses = {
-			'opensans' : [ 'n4', 'i4', 'n7', 'i7' ],
-			'oswald'   : [ 'n4', 'n7' ]
+		// configure webfont Classes
+		config.webFontClasses = {
+			'opensans' : [ 'n4' /*, 'i4', 'n7', 'i7' */ ],
+			'oswald'   : [ 'n4'/*, 'n7' */ ]
 		};
-		
-		var webFontConfig = {
-			google: { families: [ 'Open+Sans:400', 'Oswald:400:latin' ] },
-			active: function() { config.loadSecondaryFonts = true; }
-		};
-		loadWebFonts( webFontConfig, webFontClasses );
+		addClasses( config.webFontClasses );
 	}
 
+	function addClasses( webFontClasses ){
+		var webFontState = 'inactive';
+		if ( 'set' === getCookie( 'joywebfonts' ) ) {
+			webFontState = 'active';
+		}
+		var classes = [ 'wf-' + webFontState ];
+		var fontClasses;
+		var i,l;
+		for ( var webFont in webFontClasses ) {
+			fontClasses = webFontClasses[ webFont ];
+			for ( i=0, l=fontClasses.length; i<l; i++ ) {
+				classes.push( 'wf-' + webFont + '-' + fontClasses[i] + '-' + webFontState );
+			}
+		}
+		HTML.className += ' ' + classes.join( ' ' );
+	}
 
 	function loadSingle( src ) {
 		var newScript = document.createElement( 'script' );
@@ -81,39 +92,15 @@ window.JOY949 = (function( window, undefined ){
 
 	}
 
-	function loadWebFonts( webFontConfig, webFontClasses ) {
-		var tryFor = 30000; // 30 seconds
-		var tryEvery = 100; // 0.1 seconds
-		
-		if ( 'object' === typeof webFontClasses ) {
-			addClasses( webFontClasses );
+	function getCookie(name) {
+		var nameEQ = name + "=";
+		var ca = document.cookie.split(';');
+		for(var i=0;i < ca.length;i++) {
+			var c = ca[i];
+			while (c.charAt(0)==' ') c = c.substring(1,c.length);
+			if (c.indexOf(nameEQ) == 0) return c.substring(nameEQ.length,c.length);
 		}
-		tryLoading();
-		
-		function addClasses( webFontClasses ){
-			var classes = [ 'wf-inactive' ];
-			var fontClasses;
-			var i,l;
-			for ( var webFont in webFontClasses ) {
-				fontClasses = webFontClasses[ webFont ];
-				for ( i=0, l=fontClasses.length; i<l; i++ ) {
-					classes.push( 'wf-' + webFont + '-' + fontClasses[i] + '-inactive' );
-				}
-			}
-			HTML.className += ' ' + classes.join( ' ' );
-		}
-		
-		function tryLoading(){
-			if ( tryFor >= 0 ) {
-				tryFor = tryFor - tryEvery;
-				if ( window.WebFont ) {
-					window.WebFont.load( webFontConfig );
-				}
-				else {
-					window.setTimeout( tryLoading, tryEvery );
-				}
-			}
-		}
+		return null;
 	}
 
 	function yep() {
@@ -124,7 +111,6 @@ window.JOY949 = (function( window, undefined ){
 		mustard: mustard,
 		config: window.JOY949_config,
 		scripts: scripts,
-		loadWebFonts: loadWebFonts,
 		loadJs: loadJs,
 		loadJS: loadJs, // allow for typos
 		yep: yep

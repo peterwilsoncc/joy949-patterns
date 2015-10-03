@@ -16,7 +16,67 @@ window.JOY949 = window.JOY949 || {};
 
 	function initialise() {
 		localConsole();
-		loadSecondaryFonts();
+		makePolyfills( window );
+		waitForActiveFonts();
+	}
+
+
+	function waitForActiveFonts() {
+		var test = function() {
+			if ( 'FontFaceObserver' in window && 
+			     'Promise'          in window ) {
+				return true;
+			}
+			return false;
+		}
+		
+		var callback = function() {
+			function switchClasses( fontClass ){
+				var HTML = document.documentElement;
+				var HTMLclassName = ' ' + HTML.className + ' ';
+				var StartClassName = HTMLclassName;
+				var activeClass = fontClass + '-active';
+				var inactiveClass = fontClass + '-inactive';
+
+				while ( HTMLclassName.indexOf( " " + inactiveClass + " " ) >= 0 ) {
+					HTMLclassName = HTMLclassName.replace( ' ' + inactiveClass + ' ', ' ' );
+				}
+
+				if ( HTMLclassName.indexOf( ' ' + activeClass + ' ' ) < 0 ) {
+					HTMLclassName += activeClass + ' ';
+				}
+
+				if ( StartClassName !== HTMLclassName ) {
+					HTMLclassName = HTMLclassName.trim();
+					HTML.className = HTMLclassName;
+				}
+			}
+
+			function newPromise( fontName, config, fontClass ) {
+				var fontObserver = new window.FontFaceObserver( fontName, config );
+				window.Promise.all( [fontObserver.check()] ).then( function(){ fontClass && switchClasses( fontClass );} );
+				
+				return fontObserver;
+			}
+			
+			var opn4 = newPromise( 'Open Sans', {weight:400}, 'wf-opensans-n4' );
+			var opi4 = newPromise( 'Open Sans', {weight:400,style:'italic'}/*, 'wf-opensans-i4' */ );
+
+			var opn7 = newPromise( 'Open Sans', {weight:700}/*, 'wf-opensans-n7' */ );
+			var opi7 = newPromise( 'Open Sans', {weight:700,style:'italic'}/*, 'wf-opensans-i7' */ );
+			
+			var osn4 = newPromise( 'Oswald', {weight:400}, 'wf-oswald-n4' );
+			var osn7 = newPromise( 'Oswald', {weight:700}/*, 'wf-oswald-n7' */ );
+
+			window.Promise
+			.all( [opn4.check(), opi4.check(), opn7.check(), opi7.check(), osn4.check(), osn7.check()] )
+			.then( function(){ 
+				switchClasses( 'wf' );
+				setCookie( 'joywebfonts', 'set', 5 );
+			} );
+		}
+		
+		wait( test, callback );
 	}
 
 	function localConsole() {
@@ -68,26 +128,93 @@ window.JOY949 = window.JOY949 || {};
 		return context.querySelectorAll( selector );
 	}
 
-	function loadSecondaryFonts() {
-		var tryFor = 30000; // 30 seconds;
-		var tryEvery = 100; // 0.1 seconds;
-		var webFontConfig = {
-			google: { families: [ 'Open+Sans:400italic,700,700italic:latin', 'Oswald:700:latin' ] }
-		};
-
-		tryLoading();
-
-		function tryLoading(){
+	function wait( test, callback, tryEvery, tryFor ) {
+		var testVal;
+		if ( 'function' !== typeof callback ) {
+			return;
+		}
+		if ( 'function' !== typeof test ) {
+			testVal = test;
+			test = function(){ return testVal; };
+		}
+		if ( undefined === tryFor ) {
+			tryFor = 30000; // 30 seconds
+		}
+		if ( undefined === tryEvery ) {
+			tryEvery = 500; // 0.5 seconds
+		}
+		
+		tryIt();
+		
+		function tryIt() {
 			if ( tryFor >= 0 ) {
 				tryFor = tryFor - tryEvery;
-				if ( config.loadSecondaryFonts && ( true === config.loadSecondaryFonts ) ) {
-					JOY949.loadWebFonts( webFontConfig );
+				if ( true === test() ) {
+					callback();
 				}
 				else {
-					window.setTimeout( tryLoading, tryEvery );
+					window.setTimeout( tryIt, tryEvery );
 				}
 			}
 		}
+
+		
+	}
+
+	// cookies
+	function setCookie(name, value, expires, path, domain) {
+		var cookie = name + "=" + escape(value) + ";";
+
+		if (expires) {
+			// If it's a date
+			if (expires instanceof Date) {
+				// If it isn't a valid date
+				if (isNaN(expires.getTime())) {
+					expires = new Date();
+				}
+			} else {
+				expires = new Date(new Date().getTime() + parseInt(expires) * 1000 * 60 * 60 * 24);
+			}
+
+			cookie += "expires=" + expires.toGMTString() + ";";
+		}
+
+		if (!path) {
+			path = '/';
+		}
+		cookie += "path=" + path + ";";
+		if (domain) {
+			cookie += "domain=" + domain + ";";
+		}
+
+		document.cookie = cookie;
+	}
+	
+	
+	function getCookie(name) {
+		var nameEQ = name + "=";
+		var ca = document.cookie.split(';');
+		for(var i=0;i < ca.length;i++) {
+			var c = ca[i];
+			while (c.charAt(0)==' ') c = c.substring(1,c.length);
+			if (c.indexOf(nameEQ) == 0) return c.substring(nameEQ.length,c.length);
+		}
+		return null;
+	}
+
+	function deleteCookie(name) {
+		createCookie(name,"",-1);
+	}
+
+	// little helpful polyfills
+	function makePolyfills( window ) {
+		
+		if (!window.String.prototype.trim) {
+		  window.String.prototype.trim = function () {
+		    return this.replace(/^[\s\uFEFF\xA0]+|[\s\uFEFF\xA0]+$/g, '');
+		  };
+		}
+		
 	}
 
 	// these are to pass early jshint :D
