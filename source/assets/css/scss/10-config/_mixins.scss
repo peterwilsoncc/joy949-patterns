@@ -12,13 +12,15 @@
 // Set a media query in modern browsers.
 // In the lte8 stylesheet, show the content as appropriate.
 
-@mixin mq-minwidth( $minWidth ) {
+@mixin mq-minwidth( $minWidth, $include_in_ie8: true ) {
 	// in modern browsers, wraps content in the media query:
 	// @media ( min-width : $minWidth )
 	// in oldie, just displays the content
 
 	@if ( true == $is_lte8 ) {
-		@content;
+		@if ( true == $include_in_ie8 ) {
+			@content;
+		}
 	} @else {
 		@media ( min-width: $minWidth ) {
 			@content;
@@ -84,8 +86,8 @@
 }
 
 @mixin secondaryFont( $important: null){
-	font-family: sans-serif $important;
+	font-family: Impact, Haettenschweiler, "Franklin Gothic Bold", Charcoal, "Helvetica Inserat", "Bitstream Vera Sans Bold", "Arial Black", sans-serif $important;
 	.wf-oswald-n4-active & {
-		font-family: "Oswald", sans-serif $important;
+		font-family: "Oswald", Impact, Haettenschweiler, "Franklin Gothic Bold", Charcoal, "Helvetica Inserat", "Bitstream Vera Sans Bold", "Arial Black", sans-serif $important;
 	}
 }
