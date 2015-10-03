@@ -1,0 +1,87 @@
+// ************************************
+// Headings
+// ************************************
+
+// Default heading styles for writing standard body content.
+// Post titles, category headings, etc are styled elsewhere.
+
+
+$headings_headingColor: $joy949_black;
+
+
+h1,.h1,
+h2,.h2,
+h3,.h3 {
+	// h1 & h2 should not be used semantically in body copy. Styled
+	// for fallback purposes only.
+
+	color: $headings_headingColor;
+	@include secondaryFont();
+
+	font-size: 1.4em;
+	line-height: 1.5;
+
+	@media ( min-width : 641px ) {
+		font-size: 1.5em;
+		line-height: 1.4;
+	}
+
+	@media ( min-width : 769px ) {
+		font-size: 1.75em;
+		line-height: 1.3;
+	}
+}
+
+h4,.h4 {
+	color: $headings_headingColor;
+	@include secondaryFont();
+
+	font-size: 1.3em;
+	line-height: 1.6;
+
+	@media ( min-width : 641px ) {
+		font-size: 1.4em;
+		line-height: 1.5;
+	}
+
+	@media ( min-width : 769px ) {
+		font-size: 1.5em;
+		line-height: 1.4;
+	}
+}
+
+h5,.h5 {
+	color: $headings_headingColor;
+	@include secondaryFont();
+
+	font-size: 1.25em;
+	line-height: 1.75;
+
+	@media ( min-width : 641px ) {
+		font-size: 1.3em;
+		line-height: 1.6;
+	}
+
+	@media ( min-width : 769px ) {
+		font-size: 1.4em;
+		line-height: 1.5;
+	}
+}
+
+h6,.h6 {
+	color: $headings_headingColor;
+	@include secondaryFont();
+
+	font-size: 1.15em;
+	line-height: 1.75;
+
+	@media ( min-width : 641px ) {
+		font-size: 1.15em;
+		line-height: 1.75;
+	}
+
+	@media ( min-width : 769px ) {
+		font-size: 1.25em;
+		line-height: 1.5;
+	}
+}
