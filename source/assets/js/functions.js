@@ -10,12 +10,9 @@ window.JOY949 = window.JOY949 || {};
 		config = JOY949.config,
 		console = {};
 
-	if ( false === JOY949.mustard ) {
-		// Browser failed cuts mustard check in header
-		return;
+	if ( JOY949.yep() ) {
+		initialise();
 	}
-
-	initialise();
 
 	function initialise() {
 		localConsole();

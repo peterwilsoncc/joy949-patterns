@@ -116,12 +116,17 @@ window.JOY949 = (function( window, undefined ){
 		}
 	}
 
+	function yep() {
+		return mustard;
+	}
+
 	return {
 		mustard: mustard,
 		config: window.JOY949_config,
 		scripts: scripts,
 		loadWebFonts: loadWebFonts,
 		loadJs: loadJs,
-		loadJS: loadJs // allow for typos
+		loadJS: loadJs, // allow for typos
+		yep: yep
 	};
 }( window ));
