@@ -54,22 +54,33 @@ window.JOY949 = window.JOY949 || {};
 
 			function newPromise( fontName, config, fontClass ) {
 				var fontObserver = new window.FontFaceObserver( fontName, config );
-				window.Promise.all( [fontObserver.check()] ).then( function(){ fontClass && switchClasses( fontClass );} );
+				window.Promise.all( [fontObserver.check()] ).then( function(){ 
+					if ( fontClass ) {
+						switchClasses( fontClass );
+					}
+				} );
 				
 				return fontObserver;
 			}
 			
-			var opn4 = newPromise( 'Open Sans', {weight:400}, 'wf-opensans-n4' );
-			var opi4 = newPromise( 'Open Sans', {weight:400,style:'italic'}/*, 'wf-opensans-i4' */ );
+			var openSansN4 = newPromise( 'Open Sans', {weight:400}, 'wf-opensans-n4' );
+			var openSansI4 = newPromise( 'Open Sans', {weight:400,style:'italic'}/*, 'wf-opensans-i4' */ );
 
-			var opn7 = newPromise( 'Open Sans', {weight:700}/*, 'wf-opensans-n7' */ );
-			var opi7 = newPromise( 'Open Sans', {weight:700,style:'italic'}/*, 'wf-opensans-i7' */ );
+			var openSansN7 = newPromise( 'Open Sans', {weight:700}/*, 'wf-opensans-n7' */ );
+			var openSansI7 = newPromise( 'Open Sans', {weight:700,style:'italic'}/*, 'wf-opensans-i7' */ );
 			
-			var osn4 = newPromise( 'Oswald', {weight:400}, 'wf-oswald-n4' );
-			var osn7 = newPromise( 'Oswald', {weight:700}/*, 'wf-oswald-n7' */ );
+			var oswaldN4 = newPromise( 'Oswald', {weight:400}, 'wf-oswald-n4' );
+			var oswaldN7 = newPromise( 'Oswald', {weight:700}/*, 'wf-oswald-n7' */ );
 
 			window.Promise
-			.all( [opn4.check(), opi4.check(), opn7.check(), opi7.check(), osn4.check(), osn7.check()] )
+			.all( [
+				openSansN4.check(), 
+				openSansI4.check(), 
+				openSansN7.check(), 
+				openSansI7.check(), 
+				oswaldN4.check(), 
+				oswaldN7.check()
+			] )
 			.then( function(){ 
 				switchClasses( 'wf' );
 				setCookie( 'joywebfonts', 'set', 5 );
