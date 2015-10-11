@@ -9,12 +9,20 @@
 
 
 // ************************************
+// Reset
+// ************************************
+
+// These files are mainly element selectors
+@import "15-reset/normalize";
+@import "15-reset/reset";
+@import "15-reset/shared";
+
+
+// ************************************
 // Base styles
 // ************************************
 
 // These files are mainly element selectors
-@import "20-base-styles/normalize";
-
 @import "20-base-styles/box-sizing";
 @import "20-base-styles/base-fonts";
 @import "20-base-styles/inline";
