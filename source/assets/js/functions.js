@@ -22,15 +22,15 @@ window.JOY949 = window.JOY949 || {};
 
 
 	function waitForActiveFonts() {
-		var test = function() {
-			if ( 'FontFaceObserver' in window && 
+		function test() {
+			if ( 'FontFaceObserver' in window &&
 			     'Promise'          in window ) {
 				return true;
 			}
 			return false;
 		}
-		
-		var callback = function() {
+
+		function callback() {
 			function switchClasses( fontClass ){
 				var HTML = document.documentElement;
 				var HTMLclassName = ' ' + HTML.className + ' ';
@@ -38,7 +38,7 @@ window.JOY949 = window.JOY949 || {};
 				var activeClass = fontClass + '-active';
 				var inactiveClass = fontClass + '-inactive';
 
-				while ( HTMLclassName.indexOf( " " + inactiveClass + " " ) >= 0 ) {
+				while ( HTMLclassName.indexOf( ' ' + inactiveClass + ' ' ) >= 0 ) {
 					HTMLclassName = HTMLclassName.replace( ' ' + inactiveClass + ' ', ' ' );
 				}
 
@@ -54,39 +54,39 @@ window.JOY949 = window.JOY949 || {};
 
 			function newPromise( fontName, config, fontClass ) {
 				var fontObserver = new window.FontFaceObserver( fontName, config );
-				window.Promise.all( [fontObserver.check()] ).then( function(){ 
+				window.Promise.all( [fontObserver.check()] ).then( function(){
 					if ( fontClass ) {
 						switchClasses( fontClass );
 					}
 				} );
-				
+
 				return fontObserver;
 			}
-			
+
 			var openSansN4 = newPromise( 'Open Sans', {weight:400}, 'wf-opensans-n4' );
 			var openSansI4 = newPromise( 'Open Sans', {weight:400,style:'italic'}/*, 'wf-opensans-i4' */ );
 
 			var openSansN7 = newPromise( 'Open Sans', {weight:700}/*, 'wf-opensans-n7' */ );
 			var openSansI7 = newPromise( 'Open Sans', {weight:700,style:'italic'}/*, 'wf-opensans-i7' */ );
-			
+
 			var oswaldN4 = newPromise( 'Oswald', {weight:400}, 'wf-oswald-n4' );
 			var oswaldN7 = newPromise( 'Oswald', {weight:700}/*, 'wf-oswald-n7' */ );
 
 			window.Promise
 			.all( [
-				openSansN4.check(), 
-				openSansI4.check(), 
-				openSansN7.check(), 
-				openSansI7.check(), 
-				oswaldN4.check(), 
+				openSansN4.check(),
+				openSansI4.check(),
+				openSansN7.check(),
+				openSansI7.check(),
+				oswaldN4.check(),
 				oswaldN7.check()
 			] )
-			.then( function(){ 
+			.then( function(){
 				switchClasses( 'wf' );
 				setCookie( 'joywebfonts', 'set', 5 );
 			} );
 		}
-		
+
 		wait( test, callback );
 	}
 
@@ -109,7 +109,7 @@ window.JOY949 = window.JOY949 || {};
 			myConsole( method );
 		}
 	}
-	
+
 	function qsaContext( context ) {
 		if ( undefined === context ) {
 			// the context was not passed, default to document
@@ -129,7 +129,7 @@ window.JOY949 = window.JOY949 || {};
 		}
 		return context.querySelector( selector );
 	}
-	
+
 	// shortcut for querySelectorAll
 	function $$(selector, context) {
 		context = qsaContext( context );
@@ -154,9 +154,9 @@ window.JOY949 = window.JOY949 || {};
 		if ( undefined === tryEvery ) {
 			tryEvery = 500; // 0.5 seconds
 		}
-		
+
 		tryIt();
-		
+
 		function tryIt() {
 			if ( tryFor >= 0 ) {
 				tryFor = tryFor - tryEvery;
@@ -169,12 +169,12 @@ window.JOY949 = window.JOY949 || {};
 			}
 		}
 
-		
+
 	}
 
 	// cookies
 	function setCookie(name, value, expires, path, domain) {
-		var cookie = name + "=" + escape(value) + ";";
+		var cookie = name + '=' + window.escape(value) + ';';
 
 		if (expires) {
 			// If it's a date
@@ -184,50 +184,54 @@ window.JOY949 = window.JOY949 || {};
 					expires = new Date();
 				}
 			} else {
-				expires = new Date(new Date().getTime() + parseInt(expires) * 1000 * 60 * 60 * 24);
+				expires = new Date(new Date().getTime() + parseInt(expires, 10) * 1000 * 60 * 60 * 24);
 			}
 
-			cookie += "expires=" + expires.toGMTString() + ";";
+			cookie += 'expires=' + expires.toGMTString() + ';';
 		}
 
 		if (!path) {
 			path = '/';
 		}
-		cookie += "path=" + path + ";";
+		cookie += 'path=' + path + ';';
 		if (domain) {
-			cookie += "domain=" + domain + ";";
+			cookie += 'domain=' + domain + ';';
 		}
 
 		document.cookie = cookie;
 	}
-	
-	
+
+
 	function getCookie(name) {
-		var nameEQ = name + "=";
+		var nameEQ = name + '=';
 		var ca = document.cookie.split(';');
 		for(var i=0;i < ca.length;i++) {
 			var c = ca[i];
-			while (c.charAt(0)==' ') c = c.substring(1,c.length);
-			if (c.indexOf(nameEQ) == 0) return c.substring(nameEQ.length,c.length);
+			while (c.charAt(0) === ' ') {
+				c = c.substring(1,c.length);
+			}
+			if (c.indexOf(nameEQ) === 0) {
+				return c.substring(nameEQ.length,c.length);
+			}
 		}
 		return null;
 	}
 
 	function deleteCookie(name) {
-		createCookie(name,"",-1);
+		setCookie(name,'',-1);
 	}
 
 	// little helpful polyfills
 	function makePolyfills( window ) {
-		
+
 		if (!window.String.prototype.trim) {
 		  window.String.prototype.trim = function () {
 		    return this.replace(/^[\s\uFEFF\xA0]+|[\s\uFEFF\xA0]+$/g, '');
 		  };
 		}
-		
+
 	}
 
 	// these are to pass early jshint :D
-	console.log( config, $$('body'), $('body'));
+	console.log( config, $$('body'), $('body'), getCookie, setCookie, deleteCookie );
 }( window ));

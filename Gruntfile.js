@@ -1,6 +1,6 @@
 module.exports = function(grunt) {
 
-	// Configuration 
+	// Configuration
 	grunt.initConfig({
 		// pkg must come first
 		// remaining config in alphabetical order
@@ -24,10 +24,13 @@ module.exports = function(grunt) {
 		},
 
 
-		// jshint config 
+		// jshint config
 		jshint : {
 			options: grunt.file.readJSON('.jshintrc'),
-			files: ['source/assets/js/*.js']
+			files: [
+				'source/assets/js/*.js',
+				'!source/assets/js/fontfaceobserver.js'
+			]
 		},
 
 
