@@ -13,9 +13,9 @@ window.JOY949 = (function( window, undefined ){
 	}
 
 	loadJs( config.assetsPath + '/js/fontfaceobserver.js' );
-	
-	
-	
+
+
+
 	// cuts the mustard?
 	// http://responsivenews.co.uk/post/18948466399/cutting-the-mustard
 	if ( 'querySelector'    in document &&
@@ -28,14 +28,14 @@ window.JOY949 = (function( window, undefined ){
 		// Browser is good
 		initialise();
 	}
-	
+
 	function initialise() {
 		// should only run if the browser is good
 		// but let's double check anyway
 		if ( false === mustard ) {
 			return;
 		}
-		
+
 		// switch no-js from the HTML element class
 		HTML.className=HTML.className.replace(/\bno-js\b/,'')+' js wf-inactive';
 
@@ -72,7 +72,7 @@ window.JOY949 = (function( window, undefined ){
 		newScript.async = newScript.src = src;
 		document.head.appendChild( newScript );
 	}
-	
+
 	function initScriptQueue() {
 		var scriptQueue = {
 			push : function() {
@@ -82,7 +82,7 @@ window.JOY949 = (function( window, undefined ){
 				}
 			}
 		};
-		
+
 		var oldQueue = scripts;
 		scripts = scriptQueue;
 
@@ -93,12 +93,16 @@ window.JOY949 = (function( window, undefined ){
 	}
 
 	function getCookie(name) {
-		var nameEQ = name + "=";
+		var nameEQ = name + '=';
 		var ca = document.cookie.split(';');
 		for(var i=0;i < ca.length;i++) {
 			var c = ca[i];
-			while (c.charAt(0)==' ') c = c.substring(1,c.length);
-			if (c.indexOf(nameEQ) == 0) return c.substring(nameEQ.length,c.length);
+			while (c.charAt(0) === ' ') {
+				c = c.substring(1,c.length);
+			}
+			if (c.indexOf(nameEQ) === 0) {
+				return c.substring(nameEQ.length,c.length);
+			}
 		}
 		return null;
 	}
