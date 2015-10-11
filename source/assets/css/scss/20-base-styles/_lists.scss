@@ -1,0 +1,10 @@
+// ************************************
+// Lists
+// ************************************
+
+// Nested lists do not require margins
+
+li > ul,
+li > ol {
+	margin-bottom: 0;
+}
