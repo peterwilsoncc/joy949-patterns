@@ -1,0 +1,31 @@
+// ************************************
+// Logo
+// ************************************
+
+// The site logo is an SVG wrapped in a block element.
+// The block element could be a link, a div, section, heading
+// or any number of elements so needs to be reset accordingly.
+
+$Logo_DefaultFillColor     : $joy949_blue;
+$Logo_HighlightFillColor   : $joy949_pink;
+$Logo_StrokeColor          : $joy949_white;
+
+
+
+.Logo {
+	display: block; // Could be a div or a link
+	width: 230px;
+	max-width: 100%;
+	margin-left: 0;
+	margin-bottom: 0;
+}
+
+.Logo_Path {
+    fill: $Logo_DefaultFillColor;
+    stroke: $Logo_StrokeColor;
+    stroke-width: 1px;
+}
+
+.Logo_Path-Pink {
+	fill: $Logo_HighlightFillColor;
+}
