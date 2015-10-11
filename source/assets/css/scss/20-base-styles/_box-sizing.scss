@@ -1,0 +1,26 @@
+// ************************************
+// Box sizing
+// ************************************
+
+// W3C box-sizing default is confusing and sub-optimal.
+// Switch to border-box using the Coyier method:
+// https://css-tricks.com/?p=175473
+
+
+*,
+*:before,
+*:after {
+	box-sizing: inherit;
+}
+
+html {
+	box-sizing: border-box;
+}
+
+// Reset defaults from normalize.css
+hr,
+input[type="search"],
+input[type="checkbox"],
+input[type="radio"] {
+	box-sizing: inherit;
+}
