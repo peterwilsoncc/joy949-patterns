@@ -221,6 +221,11 @@ table,
 ul {
 margin-bottom:.625rem;
 }
+.Logo,
+li>ol,
+li>ul {
+margin-bottom:0;
+}
 dd,
 ol,
 ul {
@@ -247,7 +252,7 @@ font-family:Oswald,Impact,Haettenschweiler,'Franklin Gothic Bold',Charcoal,'Helv
 }
 a,
 a:visited {
-color:#d5007f;
+color:#d72c90;
 text-decoration:none;
 }
 .h4,
@@ -262,10 +267,6 @@ a:active,
 a:focus,
 a:hover {
 text-decoration:underline;
-}
-li>ol,
-li>ul {
-margin-bottom:0;
 }
 .h1,
 .h2,
@@ -385,6 +386,23 @@ th {
 padding:.5rem 1rem;
 text-align:left;
 vertical-align:top;
+}
+.Logo {
+display:block;
+width:230px;
+max-width:100%;
+margin-left:0;
+}
+.Logo_Path {
+fill:#0f63ae;
+stroke:#fff;
+stroke-width:1px;
+}
+.Logo_Path-Highlight {
+fill:#d72c90;
+}
+.Logo_Shadow {
+fill:#fff;
 }
 .u-Font-Primary {
 font-family:sans-serif!important;
