@@ -4,7 +4,7 @@
 		<title>{{ title }}</title>
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width" />
-		
+
 		<!--[if (lte IE 8)&!(IEMobile) ]>
 			<link rel="stylesheet" href="../../assets/css/style.lte8.css?{{ cacheBuster }}" media="all" />
 		<![endif]-->
@@ -24,39 +24,38 @@
 		<!-- for site -->
 		<script>
 		JOY949_config = {
-			"siteHome"   : "/",
-			"assetsPath" : "/assets"
+			"siteHome"   : "../../",
+			"assetsPath" : "../../assets"
 		};
 		</script>
-		<script src="/assets/js/head-inline.js"></script>
+		<script src="../../assets/js/head-inline.js"></script>
 		<script>
 		JOY949.loadJS( JOY949.config.assetsPath + '/js/functions.js?{{ cacheBuster }}' );
 		</script>
-		
+
 		<!-- for styleguide only -->
 		<script id="joy949pl">
-		
+
 		window.JOY949PL = window.JOY949PL || {};
 		JOY949PL.config = {
 			runJS : true
 		};
 		JOY949PL.debug = true;
-		
+
 		</script>
 		{{/ runJs }}
-		
+
 		{{^ runJs }}{{! runJs == false (so emulating no-js mode) }}
 		<!-- for styleguide only -->
 		<script>
-		
+
 		window.JOY949PL = window.JOY949PL || {};
 		JOY949PL.config = {
 			runJS : false
 		};
-		
+
 		</script>
 		{{/ runJs }}
 
 	</head>
-	<body class="{{ bodyClass }}">	
-		
+	<body class="{{ bodyClass }}">
