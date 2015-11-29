@@ -8,9 +8,9 @@
 			"src": "../../assets/images/patternlab/images/feature-image-750x400.png",
 			"alt": "Feature Image"
 		},
-		"landscape-16x9": {
-			"src": "../../assets/images/fpo_16x9.png",
-			"alt": "16x9 Image"
+		"feature-thumb": {
+			"src": "../../assets/images/patternlab/images/feature-thumb-230x230.png",
+			"alt": "Feature thumbnail"
 		},
 		"square": {
 			"src": "../../assets/images/fpo_square.png",

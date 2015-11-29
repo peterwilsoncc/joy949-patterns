@@ -5,8 +5,8 @@
 	"hero" : [
 		{
 			"img": {
-				"landscape-16x9": {
-					"src": "../../assets/images/sample/landscape-16x9-mountains.jpg",
+				"feature-thumb": {
+					"src": "../../assets/images/sample/landscape-feature-thumb-mountains.jpg",
 					"alt": "Mountains"
 				}
 			},
