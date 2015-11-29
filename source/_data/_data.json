@@ -17,7 +17,7 @@
 			"alt": "Gallery"
 		},
 		"square": {
-			"src": "../../assets/images/fpo_square.png",
+			"src": "../../assets/images/patternlab/images/square-96x96.png",
 			"alt": "Square Thumbnail"
 		},
 		"avatar" : {
