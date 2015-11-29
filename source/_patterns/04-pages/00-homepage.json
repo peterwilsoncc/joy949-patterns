@@ -5,9 +5,9 @@
 	"hero" : [
 		{
 			"img": {
-				"landscape-16x9": {
-					"src": "../../assets/images/sample/landscape-16x9-mountains.jpg",
-					"alt": "Mountains"	
+				"feature-thumb": {
+					"src": "../../assets/images/sample/landscape-feature-thumb-mountains.jpg",
+					"alt": "Mountains"
 				}
 			},
 			"headline" : {
@@ -18,9 +18,9 @@
 	"touts" : [
 		{
 			"img": {
-				"landscape-4x3": {
-					"src": "../../assets/images/sample/tout-4x3-climber.jpg",
-					"alt": "Climber"	
+				"feature-image": {
+					"src": "../../assets/images/sample/tout-feature-image-climber.jpg",
+					"alt": "Climber"
 				}
 			},
 			"headline" : {
@@ -29,9 +29,9 @@
 		},
 		{
 			"img": {
-				"landscape-4x3": {
-					"src": "../../assets/images/sample/tout-4x3-stream.jpg",
-					"alt": "Stream hiking"	
+				"feature-image": {
+					"src": "../../assets/images/sample/tout-feature-image-stream.jpg",
+					"alt": "Stream"
 				}
 			},
 			"headline" : {
@@ -40,9 +40,9 @@
 		},
 		{
 			"img": {
-				"landscape-4x3": {
-					"src": "../../assets/images/sample/tout-4x3-climbers.jpg",
-					"alt": "Explore hiking trails"	
+				"feature-image": {
+					"src": "../../assets/images/sample/tout-feature-image-climbers.jpg",
+					"alt": "Explore hiking trails"
 				}
 			},
 			"headline" : {
@@ -55,7 +55,7 @@
 			"img": {
 				"square": {
 					"src": "../../assets/images/sample/thumb-square-river.jpg",
-					"alt": "Post Thumbnail"	
+					"alt": "Post Thumbnail"
 				}
 			},
 			"headline" : {
@@ -69,7 +69,7 @@
 			"img": {
 				"square": {
 					"src": "../../assets/images/sample/thumb-square-ivy.jpg",
-					"alt": "Ivy"	
+					"alt": "Ivy"
 				}
 			},
 			"headline" : {
@@ -83,7 +83,7 @@
 			"img": {
 				"square": {
 					"src": "../../assets/images/sample/thumb-square-yosemite.jpg",
-					"alt": "Yosemite"	
+					"alt": "Yosemite"
 				}
 			},
 			"headline" : {
@@ -97,7 +97,7 @@
 			"img": {
 				"square": {
 					"src": "../../assets/images/sample/thumb-square-fire.jpg",
-					"alt": "Fire"	
+					"alt": "Fire"
 				}
 			},
 			"headline" : {
@@ -111,7 +111,7 @@
 			"img": {
 				"square": {
 					"src": "../../assets/images/sample/thumb-square-gear.jpg",
-					"alt": "Camping Gear"	
+					"alt": "Camping Gear"
 				}
 			},
 			"headline" : {

@@ -4,24 +4,40 @@
 	"htmlClass": "pl",
 	"bodyClass": "body",
 	"img": {
-		"landscape-4x3": {
-			"src": "../../assets/images/fpo_4x3.png",
-			"alt": "4x3 Image"
+		"feature-image": {
+			"src": "../../assets/images/patternlab/images/feature-image-750x400.png",
+			"alt": "Feature Image"
 		},
-		"landscape-16x9": {
-			"src": "../../assets/images/fpo_16x9.png",
-			"alt": "16x9 Image"
+		"feature-thumb": {
+			"src": "../../assets/images/patternlab/images/feature-thumb-230x230.png",
+			"alt": "Feature thumbnail"
+		},
+		"gallery": {
+			"src": "../../assets/images/patternlab/images/gallery-1080x474.png",
+			"alt": "Gallery"
 		},
 		"square": {
-			"src": "../../assets/images/fpo_square.png",
+			"src": "../../assets/images/patternlab/images/square-96x96.png",
 			"alt": "Square Thumbnail"
 		},
-		"avatar" : {
-			"src" : "../../assets/images/fpo_avatar.png",
-			"alt" : "Person Name"
+		"sponsor-logo": {
+			"src": "../../assets/images/patternlab/images/sponsor-logo-150x100.png",
+			"alt": "Square Thumbnail"
+		},
+		"wpthumb": {
+			"src": "../../assets/images/patternlab/images/wpthumb-150x150.png",
+			"alt": "WordPress Thumbnail"
+		},
+		"wpmedium": {
+			"src": "../../assets/images/patternlab/images/wpmedium-300x300.png",
+			"alt": "WordPress Medium"
+		},
+		"wplarge": {
+			"src": "../../assets/images/patternlab/images/wplarge-1024x1024.png",
+			"alt": "WordPress Large"
 		},
 		"rectangle": {
-			"src": "//placeimg.com/400/300/tech",
+			"src": "//placeimg.com/750/400/tech",
 			"alt": "Rectangle"
 		}
 	},

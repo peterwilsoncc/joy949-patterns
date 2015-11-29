@@ -2,25 +2,25 @@
 	"1": {
 		"title": "Nullizzle shizznit velizzle, hizzle, suscipit own yo', gravida vizzle, arcu.",
 		"img": {
-			"avatar": {
-				"src": "//placeimg.com/100/100/people",
-				"alt": "Avatar"
-			},
 			"square": {
-				"src": "//placeimg.com/300/300/nature",
+				"src": "//placeimg.com/96/96/nature",
 				"alt": "Square"
 			},
+			"gallery": {
+				"src": "//placeimg.com/1080/474/nature",
+				"alt": "Gallery"
+			},
 			"rectangle": {
-				"src": "//placeimg.com/400/300/tech",
+				"src": "//placeimg.com/750/400/tech",
 				"alt": "Rectangle"
 			},
-			"landscape-4x3": {
-				"src": "//placeimg.com/400/300/tech",
-				"alt": "4x3 Image"
+			"feature-image": {
+				"src": "//placeimg.com/750/400/tech",
+				"alt": "Feature Image"
 			},
-			"landscape-16x9": {
-				"src": "//placeimg.com/640/360/tech",
-				"alt": "16x9 Image"
+			"feature-thumb": {
+				"src": "//placeimg.com/230/230/tech",
+				"alt": "Feature thumb"
 			}
 		},
 		"headline": {
@@ -75,25 +75,25 @@
 	"2": {
 		"title": "Veggies sunt bona vobis, proinde vos postulo",
 		"img": {
-			"avatar": {
-				"src": "//placeimg.com/100/100/nature",
-				"alt": "Avatar"
-			},
 			"square": {
-				"src": "//placeimg.com/300/300/tech",
+				"src": "//placeimg.com/96/96/tech",
 				"alt": "Square"
 			},
+			"gallery": {
+				"src": "//placeimg.com/1080/474/nature",
+				"alt": "Gallery"
+			},
 			"rectangle": {
-				"src": "//placeimg.com/400/300/people",
+				"src": "//placeimg.com/750/400/people",
 				"alt": "Rectangle"
 			},
-			"landscape-4x3": {
-				"src": "//placeimg.com/400/300/people",
-				"alt": "4x3 Image"
+			"feature-image": {
+				"src": "//placeimg.com/750/400/people",
+				"alt": "Feature Image"
 			},
-			"landscape-16x9": {
-				"src": "//placeimg.com/640/360/people",
-				"alt": "16x9 Image"
+			"feature-thumb": {
+				"src": "//placeimg.com/230/230/people",
+				"alt": "Feature thumbnail"
 			}
 		},
 		"headline": {
@@ -148,25 +148,25 @@
 	"3": {
 		"title": "Bacon ipsum dolor sit amet turducken strip steak beef ribs shank",
 		"img": {
-			"avatar": {
-				"src": "//placeimg.com/100/100/tech",
-				"alt": "Avatar"
-			},
 			"square": {
-				"src": "//placeimg.com/300/300/people",
+				"src": "//placeimg.com/96/96/people",
 				"alt": "Square"
 			},
+			"gallery": {
+				"src": "//placeimg.com/1080/474/nature",
+				"alt": "Gallery"
+			},
 			"rectangle": {
-				"src": "//placeimg.com/400/300/nature",
+				"src": "//placeimg.com/750/400/nature",
 				"alt": "Rectangle"
 			},
-			"landscape-4x3": {
-				"src": "//placeimg.com/400/300/nature",
-				"alt": "4x3 Image"
+			"feature-image": {
+				"src": "//placeimg.com/750/400/nature",
+				"alt": "Feature Image"
 			},
-			"landscape-16x9": {
-				"src": "//placeimg.com/640/360/nature",
-				"alt": "16x9 Image"
+			"feature-thumb": {
+				"src": "//placeimg.com/230/230/nature",
+				"alt": "Feature thumbnail"
 			}
 		},
 		"headline": {
@@ -221,25 +221,25 @@
 	"4": {
 		"title": "Whatever swag accusamus occupy, gentrify butcher tote bag",
 		"img": {
-			"avatar": {
-				"src": "//placeimg.com/100/100/animals",
-				"alt": "Avatar"
-			},
 			"square": {
-				"src": "//placeimg.com/300/300/arch",
+				"src": "//placeimg.com/96/96/arch",
 				"alt": "Square"
 			},
+			"gallery": {
+				"src": "//placeimg.com/1080/474/nature",
+				"alt": "Gallery"
+			},
 			"rectangle": {
-				"src": "//placeimg.com/400/300/people/grayscale",
+				"src": "//placeimg.com/750/400/people/grayscale",
 				"alt": "Rectangle"
 			},
-			"landscape-4x3": {
-				"src": "//placeimg.com/400/300/people/greyscale",
-				"alt": "4x3 Image"
+			"feature-image": {
+				"src": "//placeimg.com/750/400/people/greyscale",
+				"alt": "Feature Image"
 			},
-			"landscape-16x9": {
-				"src": "//placeimg.com/640/360/people/greyscale",
-				"alt": "16x9 Image"
+			"feature-thumb": {
+				"src": "//placeimg.com/230/230/people/greyscale",
+				"alt": "Feature thumbnail"
 			}
 		},
 		"headline": {
@@ -294,25 +294,25 @@
 	"5": {
 		"title": "Marshall McLuhan Colbert bump backpack journalist vast wasteland Romenesko CPM",
 		"img": {
-			"avatar": {
-				"src": "//placeimg.com/100/100/people/grayscale",
-				"alt": "Avatar"
-			},
 			"square": {
-				"src": "//placeimg.com/300/300/animals",
+				"src": "//placeimg.com/96/96/animals",
 				"alt": "Square"
 			},
+			"gallery": {
+				"src": "//placeimg.com/1080/474/nature",
+				"alt": "Gallery"
+			},
 			"rectangle": {
-				"src": "//placeimg.com/400/300/arch",
+				"src": "//placeimg.com/750/400/arch",
 				"alt": "Rectangle"
 			},
-			"landscape-4x3": {
-				"src": "//placeimg.com/400/300/arch",
-				"alt": "4x3 Image"
+			"feature-image": {
+				"src": "//placeimg.com/750/400/arch",
+				"alt": "Feature Image"
 			},
-			"landscape-16x9": {
-				"src": "//placeimg.com/640/360/arch",
-				"alt": "16x9 Image"
+			"feature-thumb": {
+				"src": "//placeimg.com/230/230/arch",
+				"alt": "Feature thumbnail"
 			}
 		},
 		"headline": {
@@ -367,25 +367,25 @@
 	"6": {
 		"title": "Thunder, thunder, thundercats, Ho!",
 		"img": {
-			"avatar": {
-				"src": "//placeimg.com/100/100/arch",
-				"alt": "Avatar"
-			},
 			"square": {
-				"src": "//placeimg.com/300/300/animals",
+				"src": "//placeimg.com/96/96/animals",
 				"alt": "Square"
 			},
+			"gallery": {
+				"src": "//placeimg.com/1080/474/nature",
+				"alt": "Gallery"
+			},
 			"rectangle": {
-				"src": "//placeimg.com/400/300/people/grayscale",
+				"src": "//placeimg.com/750/400/people/grayscale",
 				"alt": "Rectangle"
 			},
-			"landscape-4x3": {
-				"src": "//placeimg.com/400/300/people/grayscale",
-				"alt": "4x3 Image"
+			"feature-image": {
+				"src": "//placeimg.com/750/400/people/grayscale",
+				"alt": "Feature Image"
 			},
-			"landscape-16x9": {
-				"src": "//placeimg.com/640/360/people/grayscale",
-				"alt": "16x9 Image"
+			"feature-thumb": {
+				"src": "//placeimg.com/230/230/people/grayscale",
+				"alt": "Feature thumbnail"
 			}
 		},
 		"headline": {
@@ -440,25 +440,25 @@
 	"7": {
 		"title": "Yeah, I like animals better than people sometimes",
 		"img": {
-			"avatar": {
-				"src": "//placeimg.com/100/100/any",
-				"alt": "Avatar"
-			},
 			"square": {
-				"src": "//placeimg.com/300/300/any",
+				"src": "//placeimg.com/96/96/any",
 				"alt": "Square"
 			},
+			"gallery": {
+				"src": "//placeimg.com/1080/474/any",
+				"alt": "Gallery"
+			},
 			"rectangle": {
-				"src": "//placeimg.com/400/300/any",
+				"src": "//placeimg.com/750/400/any",
 				"alt": "Rectangle"
 			},
-			"landscape-4x3": {
-				"src": "//placeimg.com/400/300/any",
-				"alt": "4x3 Image"
+			"feature-image": {
+				"src": "//placeimg.com/750/400/any",
+				"alt": "Feature Image"
 			},
-			"landscape-16x9": {
-				"src": "//placeimg.com/640/360/any",
-				"alt": "16x9 Image"
+			"feature-thumb": {
+				"src": "//placeimg.com/230/230/any",
+				"alt": "Feature thumbnail"
 			}
 		},
 		"headline": {
@@ -513,25 +513,25 @@
 	"8": {
 		"title": "Webtwo ipsum dolor sit amet, eskobo chumby doostang bebo",
 		"img": {
-			"avatar": {
-				"src": "//placeimg.com/100/100/any/grayscale",
-				"alt": "Avatar"
-			},
 			"square": {
-				"src": "//placeimg.com/300/300/any/grayscale",
+				"src": "//placeimg.com/96/96/any/grayscale",
 				"alt": "Square"
 			},
+			"gallery": {
+				"src": "//placeimg.com/1080/474/any/grayscale",
+				"alt": "Gallery"
+			},
 			"rectangle": {
-				"src": "//placeimg.com/400/300/any/grayscale",
+				"src": "//placeimg.com/750/400/any/grayscale",
 				"alt": "Rectangle"
 			},
-			"landscape-4x3": {
-				"src": "//placeimg.com/400/300/any/grayscale",
-				"alt": "4x3 Image"
+			"feature-image": {
+				"src": "//placeimg.com/750/400/any/grayscale",
+				"alt": "Feature Image"
 			},
-			"landscape-16x9": {
-				"src": "//placeimg.com/640/360/any/grayscale",
-				"alt": "16x9 Image"
+			"feature-thumb": {
+				"src": "//placeimg.com/230/230/any/grayscale",
+				"alt": "Feature thumbnail"
 			}
 		},
 		"headline": {
@@ -586,25 +586,25 @@
 	"9": {
 		"title": "Rebel Mission to Ord Mantell",
 		"img": {
-			"avatar": {
-				"src": "//placeimg.com/100/100/any/sepia",
-				"alt": "Avatar"
-			},
 			"square": {
-				"src": "//placeimg.com/300/300/any/sepia",
+				"src": "//placeimg.com/96/96/any/sepia",
 				"alt": "Square"
 			},
+			"gallery": {
+				"src": "//placeimg.com/1080/474/any/sepia",
+				"alt": "Gallery"
+			},
 			"rectangle": {
-				"src": "//placeimg.com/400/300/any/sepia",
+				"src": "//placeimg.com/750/400/any/sepia",
 				"alt": "Rectangle"
 			},
-			"landscape-4x3": {
-				"src": "//placeimg.com/400/300/any/sepia",
-				"alt": "4x3 Image"
+			"feature-image": {
+				"src": "//placeimg.com/750/400/any/sepia",
+				"alt": "Feature Image"
 			},
-			"landscape-16x9": {
-				"src": "//placeimg.com/640/360/any/sepia",
-				"alt": "16x9 Image"
+			"feature-thumb": {
+				"src": "//placeimg.com/230/230/any/sepia",
+				"alt": "Feature thumbnail"
 			}
 		},
 		"headline": {
@@ -659,25 +659,25 @@
 	"10": {
 		"title": "Help, help, I'm being repressed!",
 		"img": {
-			"avatar": {
-				"src": "//placeimg.com/100/100/tech/grayscale",
-				"alt": "Avatar"
-			},
 			"square": {
-				"src": "//placeimg.com/300/300/nature/grayscale",
+				"src": "//placeimg.com/96/96/nature/grayscale",
 				"alt": "Square"
 			},
+			"gallery": {
+				"src": "//placeimg.com/1080/474/arch/greyscale",
+				"alt": "Gallery"
+			},
 			"rectangle": {
-				"src": "//placeimg.com/400/300/arch/grayscale",
+				"src": "//placeimg.com/750/400/arch/grayscale",
 				"alt": "Rectangle"
 			},
-			"landscape-4x3": {
-				"src": "//placeimg.com/400/300/arch/grayscale",
-				"alt": "4x3 Image"
+			"feature-image": {
+				"src": "//placeimg.com/750/400/arch/grayscale",
+				"alt": "Feature Image"
 			},
-			"landscape-16x9": {
-				"src": "//placeimg.com/640/360/arch/grayscale",
-				"alt": "16x9 Image"
+			"feature-thumb": {
+				"src": "//placeimg.com/230/230/arch/grayscale",
+				"alt": "Feature thumbnail"
 			}
 		},
 		"headline": {
@@ -732,25 +732,25 @@
 	"11": {
 		"title": "Danish danish candy canes bonbon cheesecake danish marzipan",
 		"img": {
-			"avatar": {
-				"src": "//placeimg.com/100/100/tech/sepia",
-				"alt": "Avatar"
-			},
 			"square": {
-				"src": "//placeimg.com/300/300/animals/sepia",
+				"src": "//placeimg.com/96/96/animals/sepia",
 				"alt": "Square"
 			},
+			"gallery": {
+				"src": "//placeimg.com/1080/474/arch/sepia",
+				"alt": "Gallery"
+			},
 			"rectangle": {
-				"src": "//placeimg.com/400/300/arch/sepia",
+				"src": "//placeimg.com/750/400/arch/sepia",
 				"alt": "Rectangle"
 			},
-			"landscape-4x3": {
-				"src": "//placeimg.com/400/300/arch/sepia",
-				"alt": "4x3 Image"
+			"feature-image": {
+				"src": "//placeimg.com/750/400/arch/sepia",
+				"alt": "Feature Image"
 			},
-			"landscape-16x9": {
-				"src": "//placeimg.com/640/360/arch/sepia",
-				"alt": "16x9 Image"
+			"feature-thumb": {
+				"src": "//placeimg.com/230/230/arch/sepia",
+				"alt": "Feature thumbnail"
 			}
 		},
 		"headline": {
@@ -805,25 +805,25 @@
 	"12": {
 		"title": "Cottage cheese brie lancashire. Boursin when the cheese comes out.",
 		"img": {
-			"avatar": {
-				"src": "//placeimg.com/100/100/people/sepia",
-				"alt": "Avatar"
-			},
 			"square": {
-				"src": "//placeimg.com/300/300/people/sepia",
+				"src": "//placeimg.com/96/96/people/sepia",
 				"alt": "Square"
 			},
+			"gallery": {
+				"src": "//placeimg.com/1080/474/people/sepia",
+				"alt": "Gallery"
+			},
 			"rectangle": {
-				"src": "//placeimg.com/400/300/people/sepia",
+				"src": "//placeimg.com/750/400/people/sepia",
 				"alt": "Rectangle"
 			},
-			"landscape-4x3": {
-				"src": "//placeimg.com/400/300/people/sepia",
-				"alt": "4x3 Image"
+			"feature-image": {
+				"src": "//placeimg.com/750/400/people/sepia",
+				"alt": "Feature Image"
 			},
-			"landscape-16x9": {
-				"src": "//placeimg.com/640/360/people/sepia",
-				"alt": "16x9 Image"
+			"feature-thumb": {
+				"src": "//placeimg.com/230/230/people/sepia",
+				"alt": "Feature thumbnail"
 			}
 		},
 		"headline": {
