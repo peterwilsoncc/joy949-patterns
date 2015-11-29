@@ -4,9 +4,9 @@
 	"htmlClass": "pl",
 	"bodyClass": "body",
 	"img": {
-		"landscape-4x3": {
-			"src": "../../assets/images/fpo_4x3.png",
-			"alt": "4x3 Image"
+		"feature-image": {
+			"src": "../../assets/images/patternlab/images/feature-image-750x400.png",
+			"alt": "Feature Image"
 		},
 		"landscape-16x9": {
 			"src": "../../assets/images/fpo_16x9.png",
@@ -21,7 +21,7 @@
 			"alt" : "Person Name"
 		},
 		"rectangle": {
-			"src": "//placeimg.com/400/300/tech",
+			"src": "//placeimg.com/750/400/tech",
 			"alt": "Rectangle"
 		}
 	},

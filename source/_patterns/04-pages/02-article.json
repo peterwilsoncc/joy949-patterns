@@ -6,13 +6,13 @@
 		"last-name" : "McCormick"
 	},
 	"img": {
-		"landscape-4x3": {
-			"src": "../../assets/images/sample/landscape-16x9-mountains.jpg",
+		"feature-image": {
+			"src": "../../assets/images/sample/landscape-feature-image-mountains.jpg",
 			"alt": "Mountains"
 		},
 		"landscape-16x9": {
 			"src": "../../assets/images/sample/landscape-16x9-mountains.jpg",
-			"alt": "Mountains"	
+			"alt": "Mountains"
 		}
 	},
 	"inset-blocks" : [
