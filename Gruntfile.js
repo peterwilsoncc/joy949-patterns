@@ -154,6 +154,13 @@ module.exports = function(grunt) {
 	grunt.loadNpmTasks('grunt-sass');
 
 	// Tasks
+	grunt.registerTask( 'css', [
+		'sass',
+		'cssmin',
+		'csscomb'
+	] );
+
+
 	grunt.registerTask('build', ['copy', 'sass', 'shell:patternlab']);
 	grunt.registerTask('default', ['build','watch']);
 	grunt.registerTask('precommit', ['jshint', 'build']);
