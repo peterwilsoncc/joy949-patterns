@@ -24,6 +24,21 @@ module.exports = function(grunt) {
 		},
 
 
+		// css comb
+		csscomb : {
+			options: {
+				config: 'csscomb.json'
+			},
+			dynamic_mappings: {
+				expand: true,
+				cwd: 'source/assets/css',
+				src: ['*.min.css'],
+				dest: 'source/assets/css',
+				ext: '.min.css'
+			}
+		},
+
+
 		// grunt cssmin config
 		cssmin: {
 			styles : {
@@ -134,6 +149,7 @@ module.exports = function(grunt) {
 	grunt.loadNpmTasks('grunt-contrib-cssmin');
 	grunt.loadNpmTasks('grunt-contrib-jshint');
 	grunt.loadNpmTasks('grunt-contrib-watch');
+	grunt.loadNpmTasks('grunt-csscomb');
 	grunt.loadNpmTasks('grunt-shell');
 	grunt.loadNpmTasks('grunt-sass');
 
