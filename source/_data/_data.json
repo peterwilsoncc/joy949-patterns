@@ -24,6 +24,18 @@
 			"src": "../../assets/images/patternlab/images/sponsor-logo-150x100.png",
 			"alt": "Square Thumbnail"
 		},
+		"wpthumb": {
+			"src": "../../assets/images/patternlab/images/wpthumb-150x150.png",
+			"alt": "WordPress Thumbnail"
+		},
+		"wpmedium": {
+			"src": "../../assets/images/patternlab/images/wpmedium-300x300.png",
+			"alt": "WordPress Medium"
+		},
+		"wplarge": {
+			"src": "../../assets/images/patternlab/images/wplarge-1024x1024.png",
+			"alt": "WordPress Large"
+		},
 		"avatar" : {
 			"src" : "../../assets/images/fpo_avatar.png",
 			"alt" : "Person Name"
