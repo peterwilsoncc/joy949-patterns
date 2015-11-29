@@ -34,12 +34,12 @@
 	// @media ( max-width : $maxWidth )
 	// in oldie, the content is not included unless
 	// the second variable is passed as true.
-	
+
 	// using max-width media queries is less than ideal
 	// as browsers may download resources they do not need.
-	// The browsers using the max-width media queries are 
+	// The browsers using the max-width media queries are
 	// often phones on bandwidth limited networks.
-	
+
 	@if ( true == $is_lte8 ) {
 		@if ( true == $include_in_ie8 ) {
 			@content;
@@ -61,7 +61,7 @@
 
 	@if ( true == $is_lte8 ) {
 		@content;
-	} 
+	}
 }
 
 @mixin not-lte8() {
@@ -70,7 +70,7 @@
 
 	@if ( false == $is_lte8 ) {
 		@content;
-	} 
+	}
 }
 
 // ------------------------------------
