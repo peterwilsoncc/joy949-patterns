@@ -4,7 +4,7 @@
 }
 
 .sg-swatch--pink {
-	background-color: #d5007f;
+	background-color: #d72c90;
 }
 
 .sg-swatch--pink-light {
@@ -12,7 +12,7 @@
 }
 
 .sg-swatch--blue {
-	background-color: #154fa0;
+	background-color: #0f63ae;
 }
 
 .sg-swatch--green {
@@ -41,6 +41,10 @@
 
 .sg-swatch--greya {
 	background-color: #aaa;
+}
+
+#atoms-logo .sg-pattern-body {
+	background: url(//joy.org.au/wp-content/themes/joy-public-website-joy949-theme/images/joy-background-tiles.gif);
 }
 
 /*# sourceMappingURL=patternlab.css.map */

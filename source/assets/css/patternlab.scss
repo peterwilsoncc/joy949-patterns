@@ -54,3 +54,13 @@
 .sg-swatch--greya {
 	background-color: $joy949_greya;
 }
+
+// ************************************
+// Logo
+// ************************************
+
+// Display the logo better by including the background.
+
+#atoms-logo .sg-pattern-body {
+  background: url(//joy.org.au/wp-content/themes/joy-public-website-joy949-theme/images/joy-background-tiles.gif);
+}
