@@ -36,10 +36,6 @@
 			"src": "../../assets/images/patternlab/images/wplarge-1024x1024.png",
 			"alt": "WordPress Large"
 		},
-		"avatar" : {
-			"src" : "../../assets/images/fpo_avatar.png",
-			"alt" : "Person Name"
-		},
 		"rectangle": {
 			"src": "//placeimg.com/750/400/tech",
 			"alt": "Rectangle"
