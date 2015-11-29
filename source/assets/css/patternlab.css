@@ -1,0 +1,46 @@
+.sg-colors {
+	list-style: none;
+	padding-left: 0;
+}
+
+.sg-swatch--pink {
+	background-color: #d5007f;
+}
+
+.sg-swatch--pink-light {
+	background-color: #f5b1db;
+}
+
+.sg-swatch--blue {
+	background-color: #154fa0;
+}
+
+.sg-swatch--green {
+	background-color: #57a957;
+}
+
+.sg-swatch--black {
+	background-color: #000;
+}
+
+.sg-swatch--white {
+	background-color: #fff;
+}
+
+.sg-swatch--off-white {
+	background-color: #f1f1f1;
+}
+
+.sg-swatch--grey3 {
+	background-color: #333;
+}
+
+.sg-swatch--grey7 {
+	background-color: #777;
+}
+
+.sg-swatch--greya {
+	background-color: #aaa;
+}
+
+/*# sourceMappingURL=patternlab.css.map */
