@@ -20,6 +20,10 @@
 			"src": "../../assets/images/patternlab/images/square-96x96.png",
 			"alt": "Square Thumbnail"
 		},
+		"sponsor-logo": {
+			"src": "../../assets/images/patternlab/images/sponsor-logo-150x100.png",
+			"alt": "Square Thumbnail"
+		},
 		"avatar" : {
 			"src" : "../../assets/images/fpo_avatar.png",
 			"alt" : "Person Name"
