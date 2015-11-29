@@ -37,7 +37,10 @@ module.exports = function(grunt) {
 		// grunt sass config
 		sass: {
 			options : {
-				sourceMap: false
+				indentType : 'tab',
+				indentWidth : 1,
+				outputStyle : 'expanded',
+				sourceMap   : true
 			},
 			dist: {
 				files: {
