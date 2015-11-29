@@ -263,7 +263,8 @@ select {
  *    `input` and others.
  */
 button,
-html input[type="button"], input[type="reset"],
+html input[type="button"],
+input[type="reset"],
 input[type="submit"] {
 	-webkit-appearance: button;
 	/* 2 */
@@ -497,9 +498,9 @@ h3, .h3 {
 	line-height: 1.3;
 }
 
-.wf-oswald-n4-active h1, .wf-oswald-n4-active .h1,
-.wf-oswald-n4-active h2, .wf-oswald-n4-active .h2,
-.wf-oswald-n4-active h3, .wf-oswald-n4-active .h3 {
+.wf-oswald-n4-active h1, .wf-oswald-n4-active .h1, .wf-oswald-n4-active
+h2, .wf-oswald-n4-active .h2, .wf-oswald-n4-active
+h3, .wf-oswald-n4-active .h3 {
 	font-family: "Oswald", Impact, Haettenschweiler, "Franklin Gothic Bold", Charcoal, "Helvetica Inserat", "Bitstream Vera Sans Bold", "Arial Black", sans-serif;
 }
 
@@ -559,7 +560,7 @@ th, td {
 	vertical-align: top;
 	border: 1px solid;
 	/* different paddingto allow for line hiehht */
-	padding: 0.5rem 1rem;
+	padding: .5rem 1rem;
 }
 
 .u-Font-Primary {
@@ -575,8 +576,8 @@ th, td {
 	font-family: Impact, Haettenschweiler, "Franklin Gothic Bold", Charcoal, "Helvetica Inserat", "Bitstream Vera Sans Bold", "Arial Black", sans-serif !important;
 }
 
-.wf-oswald-n4-active .u-Font-Secondary,
-.wf-oswald-n4-active .u-Font-Secondery {
+.wf-oswald-n4-active .u-Font-Secondary, .wf-oswald-n4-active
+.u-Font-Secondery {
 	font-family: "Oswald", Impact, Haettenschweiler, "Franklin Gothic Bold", Charcoal, "Helvetica Inserat", "Bitstream Vera Sans Bold", "Arial Black", sans-serif !important;
 }
 
