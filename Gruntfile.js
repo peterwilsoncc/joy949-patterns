@@ -24,6 +24,53 @@ module.exports = function(grunt) {
 		},
 
 
+		// grunt cssmin config
+		cssmin: {
+			styles : {
+				options : {
+					advanced : true,
+					aggressiveMerging : true,
+					compatibility : '*',
+					debug : false,
+					keepBreaks : true,
+					keepSpecialComments : 0,
+					mediaMerging : true,
+					processImport : true,
+					processImportFrom : ['all'],
+					roundingPrecision : -1
+				},
+				files: [{
+					expand: true,
+					cwd: 'source/assets/css',
+					src: ['style.css'],
+					dest: 'source/assets/css',
+					ext: '.min.css'
+				}]
+			},
+			lte8styles : {
+				options : {
+					advanced : true,
+					aggressiveMerging : true,
+					compatibility : 'ie7',
+					debug : false,
+					keepBreaks : true,
+					keepSpecialComments : 0,
+					mediaMerging : true,
+					processImport : true,
+					processImportFrom : ['all'],
+					roundingPrecision : -1
+				},
+				files: [{
+					expand: true,
+					cwd: 'source/assets/css',
+					src: ['style-lte8.css'],
+					dest: 'source/assets/css',
+					ext: '.min.css'
+				}]
+			}
+		},
+
+
 		// jshint config
 		jshint : {
 			options: grunt.file.readJSON('.jshintrc'),
@@ -84,6 +131,7 @@ module.exports = function(grunt) {
 
 	// Plugins
 	grunt.loadNpmTasks('grunt-contrib-copy');
+	grunt.loadNpmTasks('grunt-contrib-cssmin');
 	grunt.loadNpmTasks('grunt-contrib-jshint');
 	grunt.loadNpmTasks('grunt-contrib-watch');
 	grunt.loadNpmTasks('grunt-shell');
