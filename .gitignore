@@ -2,10 +2,9 @@
 node_modules/*
 public/*
 #source/*
-source/assets/css/*.css
+source/assets/css/*.map
 config.ini
 latest-change.txt
 *-ck.js
 *-min.js
 *.sass-cache/
-source/assets/js/fontfaceobserver.js
