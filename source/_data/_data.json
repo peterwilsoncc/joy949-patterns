@@ -12,6 +12,10 @@
 			"src": "../../assets/images/patternlab/images/feature-thumb-230x230.png",
 			"alt": "Feature thumbnail"
 		},
+		"gallery": {
+			"src": "../../assets/images/patternlab/images/gallery-1080x474.png",
+			"alt": "Gallery"
+		},
 		"square": {
 			"src": "../../assets/images/fpo_square.png",
 			"alt": "Square Thumbnail"

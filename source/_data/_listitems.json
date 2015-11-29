@@ -10,6 +10,10 @@
 				"src": "//placeimg.com/300/300/nature",
 				"alt": "Square"
 			},
+			"gallery": {
+				"src": "//placeimg.com/1080/474/nature",
+				"alt": "Gallery"
+			},
 			"rectangle": {
 				"src": "//placeimg.com/750/400/tech",
 				"alt": "Rectangle"
@@ -82,6 +86,10 @@
 			"square": {
 				"src": "//placeimg.com/300/300/tech",
 				"alt": "Square"
+			},
+			"gallery": {
+				"src": "//placeimg.com/1080/474/nature",
+				"alt": "Gallery"
 			},
 			"rectangle": {
 				"src": "//placeimg.com/750/400/people",
@@ -156,6 +164,10 @@
 				"src": "//placeimg.com/300/300/people",
 				"alt": "Square"
 			},
+			"gallery": {
+				"src": "//placeimg.com/1080/474/nature",
+				"alt": "Gallery"
+			},
 			"rectangle": {
 				"src": "//placeimg.com/750/400/nature",
 				"alt": "Rectangle"
@@ -228,6 +240,10 @@
 			"square": {
 				"src": "//placeimg.com/300/300/arch",
 				"alt": "Square"
+			},
+			"gallery": {
+				"src": "//placeimg.com/1080/474/nature",
+				"alt": "Gallery"
 			},
 			"rectangle": {
 				"src": "//placeimg.com/750/400/people/grayscale",
@@ -302,6 +318,10 @@
 				"src": "//placeimg.com/300/300/animals",
 				"alt": "Square"
 			},
+			"gallery": {
+				"src": "//placeimg.com/1080/474/nature",
+				"alt": "Gallery"
+			},
 			"rectangle": {
 				"src": "//placeimg.com/750/400/arch",
 				"alt": "Rectangle"
@@ -374,6 +394,10 @@
 			"square": {
 				"src": "//placeimg.com/300/300/animals",
 				"alt": "Square"
+			},
+			"gallery": {
+				"src": "//placeimg.com/1080/474/nature",
+				"alt": "Gallery"
 			},
 			"rectangle": {
 				"src": "//placeimg.com/750/400/people/grayscale",
@@ -448,6 +472,10 @@
 				"src": "//placeimg.com/300/300/any",
 				"alt": "Square"
 			},
+			"gallery": {
+				"src": "//placeimg.com/1080/474/any",
+				"alt": "Gallery"
+			},
 			"rectangle": {
 				"src": "//placeimg.com/750/400/any",
 				"alt": "Rectangle"
@@ -520,6 +548,10 @@
 			"square": {
 				"src": "//placeimg.com/300/300/any/grayscale",
 				"alt": "Square"
+			},
+			"gallery": {
+				"src": "//placeimg.com/1080/474/any/grayscale",
+				"alt": "Gallery"
 			},
 			"rectangle": {
 				"src": "//placeimg.com/750/400/any/grayscale",
@@ -594,6 +626,10 @@
 				"src": "//placeimg.com/300/300/any/sepia",
 				"alt": "Square"
 			},
+			"gallery": {
+				"src": "//placeimg.com/1080/474/any/sepia",
+				"alt": "Gallery"
+			},
 			"rectangle": {
 				"src": "//placeimg.com/750/400/any/sepia",
 				"alt": "Rectangle"
@@ -666,6 +702,10 @@
 			"square": {
 				"src": "//placeimg.com/300/300/nature/grayscale",
 				"alt": "Square"
+			},
+			"gallery": {
+				"src": "//placeimg.com/1080/474/arch/greyscale",
+				"alt": "Gallery"
 			},
 			"rectangle": {
 				"src": "//placeimg.com/750/400/arch/grayscale",
@@ -740,6 +780,10 @@
 				"src": "//placeimg.com/300/300/animals/sepia",
 				"alt": "Square"
 			},
+			"gallery": {
+				"src": "//placeimg.com/1080/474/arch/sepia",
+				"alt": "Gallery"
+			},
 			"rectangle": {
 				"src": "//placeimg.com/750/400/arch/sepia",
 				"alt": "Rectangle"
@@ -812,6 +856,10 @@
 			"square": {
 				"src": "//placeimg.com/300/300/people/sepia",
 				"alt": "Square"
+			},
+			"gallery": {
+				"src": "//placeimg.com/1080/474/people/sepia",
+				"alt": "Gallery"
 			},
 			"rectangle": {
 				"src": "//placeimg.com/750/400/people/sepia",
