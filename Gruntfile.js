@@ -136,7 +136,7 @@ module.exports = function(grunt) {
 			},
 			assets : {
 				files: ['source/**/*'],
-				tasks: ['copy', 'sass', 'shell:patternlab'],
+				tasks: ['copy', 'css', 'shell:patternlab'],
 				options: {
 					spawn: false
 				}
@@ -161,7 +161,7 @@ module.exports = function(grunt) {
 	] );
 
 
-	grunt.registerTask('build', ['copy', 'sass', 'shell:patternlab']);
+	grunt.registerTask('build', ['copy', 'css', 'shell:patternlab']);
 	grunt.registerTask('default', ['build','watch']);
 	grunt.registerTask('precommit', ['jshint', 'build']);
 };
