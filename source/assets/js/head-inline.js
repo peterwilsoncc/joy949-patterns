@@ -52,7 +52,7 @@ window.JOY949 = (function( window, undefined ){
 
 	function addClasses( webFontClasses ){
 		var webFontState = 'inactive';
-		if ( 'set' === getCookie( 'joywebfonts' ) ) {
+		if ( 'set' === getCookie( 'joy949webfonts' ) ) {
 			webFontState = 'active';
 		}
 		var classes = [ 'wf-' + webFontState ];

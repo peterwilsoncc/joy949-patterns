@@ -83,7 +83,7 @@ window.JOY949 = window.JOY949 || {};
 			] )
 			.then( function(){
 				switchClasses( 'wf' );
-				setCookie( 'joywebfonts', 'set', 5 );
+				setCookie( 'joy949webfonts', 'set', 5 );
 			} );
 		}
 
