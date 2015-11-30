@@ -1,12 +1,12 @@
-## Joy 94.9 Pattern Lab
-This a pattern library for the re-development of the [Joy 94.9 website](http://joy.org.au/).
+## JOY 94.9 Pattern Lab
+This a pattern library for the re-development of the [JOY 94.9 website](http://joy.org.au/).
 
 ### Background
 The aim is to improve the performance of the site without affecting the design. [Peter Wilson](@peterwilsoncc) presented a talk at WordCamp Brisbane on high performance sites. 
 
 https://twitter.com/pwcc/status/604800272276328448
 
-[Avi Miller](@Djelibeybi) respondend.
+[Avi Miller](@Djelibeybi) responded.
 
 https://twitter.com/Djelibeybi/status/604822123840798720
 

@@ -1,7 +1,7 @@
 {
   "name": "joy949-patterns",
   "version": "0.0.1",
-  "description": "Joy 94.9 Pattern Library",
+  "description": "JOY 94.9 Pattern Library",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
