@@ -725,4 +725,13 @@ Example showing how to change the color/size of the icons:
 	font-family: "Oswald", Impact, Haettenschweiler, "Franklin Gothic Bold", Charcoal, "Helvetica Inserat", "Bitstream Vera Sans Bold", "Arial Black", sans-serif !important;
 }
 
+.u-List-Inline {
+	list-style: none;
+	margin-left: 0;
+}
+
+.u-List-Inline > li {
+	display: inline-block;
+}
+
 /*# sourceMappingURL=style.css.map */

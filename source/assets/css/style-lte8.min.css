@@ -405,3 +405,10 @@ font-family:Impact,Haettenschweiler,'Franklin Gothic Bold',Charcoal,'Helvetica I
 .wf-oswald-n4-active .u-Font-Secondery {
 font-family:Oswald,Impact,Haettenschweiler,'Franklin Gothic Bold',Charcoal,'Helvetica Inserat','Bitstream Vera Sans Bold','Arial Black',sans-serif!important;
 }
+.u-List-Inline {
+margin-left:0;
+list-style:none;
+}
+.u-List-Inline>li {
+display:inline-block;
+}
