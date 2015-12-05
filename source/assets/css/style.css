@@ -607,6 +607,84 @@ th, td {
 	padding: .5rem 1rem;
 }
 
+.Icon {
+	display: inline-block;
+	width: 1em;
+	height: 1em;
+	fill: currentColor;
+}
+
+/* =======================================================================================
+Example showing how to change the color/size of the icons:
+.Icon-name {
+	font-size: 32px; // works because "width" & "height" were set using em units
+	color: red; // works for single-colored icons, because "fill" was set to "currentColor"
+}
+======================================================================================== */
+.Icon-Vimeo {
+	width: 1.0048828125em;
+}
+
+.Icon-Pocket {
+	width: 0.9599609375em;
+}
+
+.Icon-StumbleUpon {
+	width: 1.0712890625em;
+}
+
+.Icon-LinkedIn {
+	width: 0.857421875em;
+}
+
+.Icon-Tumblr {
+	width: 0.609375em;
+}
+
+.Icon-Pinterest {
+	width: 0.7138671875em;
+}
+
+.Icon-Share {
+	width: 0.857421875em;
+}
+
+.Icon-GooglePlus {
+	width: 1.2861328125em;
+}
+
+.Icon-Print {
+	width: 0.9287109375em;
+}
+
+.Icon-Home {
+	width: 0.9287109375em;
+}
+
+.Icon-Angle-Down {
+	width: 0.642578125em;
+}
+
+.Icon-Feed {
+	width: 0.7861328125em;
+}
+
+.Icon-Instagram {
+	width: 0.857421875em;
+}
+
+.Icon-Youtube {
+	width: 0.857421875em;
+}
+
+.Icon-Twitter {
+	width: 0.9287109375em;
+}
+
+.Icon-Facebook {
+	width: 0.587890625em;
+}
+
 .Logo {
 	display: block;
 	width: 230px;

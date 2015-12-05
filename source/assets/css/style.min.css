@@ -387,6 +387,57 @@ padding:.5rem 1rem;
 text-align:left;
 vertical-align:top;
 }
+.Icon {
+display:inline-block;
+width:1em;
+height:1em;
+
+fill:currentColor;
+}
+.Icon-Vimeo {
+width:1.0048828125em;
+}
+.Icon-Pocket {
+width:.9599609375em;
+}
+.Icon-StumbleUpon {
+width:1.0712890625em;
+}
+.Icon-LinkedIn {
+width:.857421875em;
+}
+.Icon-Tumblr {
+width:.609375em;
+}
+.Icon-Pinterest {
+width:.7138671875em;
+}
+.Icon-Share {
+width:.857421875em;
+}
+.Icon-GooglePlus {
+width:1.2861328125em;
+}
+.Icon-Home,
+.Icon-Print {
+width:.9287109375em;
+}
+.Icon-Angle-Down {
+width:.642578125em;
+}
+.Icon-Feed {
+width:.7861328125em;
+}
+.Icon-Instagram,
+.Icon-Youtube {
+width:.857421875em;
+}
+.Icon-Twitter {
+width:.9287109375em;
+}
+.Icon-Facebook {
+width:.587890625em;
+}
 .Logo {
 display:block;
 width:230px;
