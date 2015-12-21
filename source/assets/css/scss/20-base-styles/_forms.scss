@@ -1,0 +1,79 @@
+// ************************************
+// Forms
+// ************************************
+
+// Default form styles. The site will use gravity forms so
+// only the most rudimentary styles are required here.
+
+label {
+	display: block;
+	font-size: .875em;
+	line-height: (1.5 / .875);
+}
+
+fieldset {
+	border: 0;
+	min-width: 0; /* min-width is defined in blink */
+}
+
+// Gravity forms does not use a class for text type fields.
+input[type=text],
+input[type=email],
+input[type=search],
+input[type=date],
+input[type=month],
+input[type=week],
+input[type=datetime],
+input[type=datetime-local],
+input[type=password],
+input[type=number],
+input[type=tel],
+input[type=url],
+textarea.textarea {
+	border: 1px solid $joy949_grey7;
+	border-radius: 3px;
+	outline: 0;
+	width: 97%;
+	padding-top: .313em;
+	padding-right: .25em;
+	padding-bottom: .313em;
+	padding-left: .25em;
+
+	&:focus {
+		border-color: $joy949_blue;
+	}
+}
+
+input[type=color],
+input[type=range] {
+	width: 97%;
+}
+
+.gfield_checkbox,
+.gfield_radio {
+	// Gravity forms applies these to the lists wrapping the
+	// checkbox and radio buttons.
+	list-style: none;
+	margin-left: 0;
+}
+
+	.gfield_checkbox li,
+	.gfield_radio li {
+		width: 97%;
+		@include clearfix();
+	}
+
+	input[type=radio],
+	input[type=checkbox] {
+		float: left;
+		margin-top: .25em;
+	}
+
+	input[type=radio] + label,
+	input[type=checkbox] + label {
+		margin-left: 1.5em;
+	}
+
+select {
+	width: 97%;
+}
