@@ -1,0 +1,110 @@
+.Icon {
+	display: inline-block;
+	background-repeat: no-repeat;
+	background-image: url(sprite.svg);
+}
+.Icon-Shareable {
+	width: 20px;
+	height: 20px;
+	background-position: 0 0;
+}
+.Icon-Vimeo {
+	width: 28px;
+	height: 28px;
+	background-position: 0 -36px;
+}
+.Icon-Check {
+	width: 28px;
+	height: 28px;
+	background-position: -44px -36px;
+}
+.Icon-Reddit {
+	width: 28px;
+	height: 28px;
+	background-position: -88px -36px;
+}
+.Icon-WordPress {
+	width: 28px;
+	height: 28px;
+	background-position: -132px -36px;
+}
+.Icon-Pocket {
+	width: 27px;
+	height: 28px;
+	background-position: -176px -36px;
+}
+.Icon-StumbleUpon {
+	width: 30px;
+	height: 28px;
+	background-position: -220px -36px;
+}
+.Icon-LinkedIn {
+	width: 24px;
+	height: 28px;
+	background-position: -308px -36px;
+}
+.Icon-Tumblr {
+	width: 17px;
+	height: 28px;
+	background-position: -352px -36px;
+}
+.Icon-Pinterest {
+	width: 20px;
+	height: 28px;
+	background-position: -396px -36px;
+}
+.Icon-Share {
+	width: 24px;
+	height: 28px;
+	background-position: -440px -36px;
+}
+.Icon-GooglePlus {
+	width: 36px;
+	height: 28px;
+	background-position: -484px -36px;
+}
+.Icon-Print {
+	width: 26px;
+	height: 28px;
+	background-position: -572px -36px;
+}
+.Icon-Home {
+	width: 26px;
+	height: 28px;
+	background-position: -616px -36px;
+}
+.Icon-Angle-Down {
+	width: 18px;
+	height: 28px;
+	background-position: -660px -36px;
+}
+.Icon-Envelope {
+	width: 28px;
+	height: 28px;
+	background-position: 0 -80px;
+}
+.Icon-Feed {
+	width: 22px;
+	height: 28px;
+	background-position: -44px -80px;
+}
+.Icon-Instagram {
+	width: 24px;
+	height: 28px;
+	background-position: -88px -80px;
+}
+.Icon-Youtube {
+	width: 24px;
+	height: 28px;
+	background-position: -132px -80px;
+}
+.Icon-Twitter {
+	width: 26px;
+	height: 28px;
+	background-position: -176px -80px;
+}
+.Icon-Facebook {
+	width: 16px;
+	height: 28px;
+	background-position: -220px -80px;
+}
