@@ -64,3 +64,19 @@
 #atoms-logo .sg-pattern-body {
   background: url(../images/patternlab/joy949-background-tiles.gif);
 }
+
+// ************************************
+// Favicons
+// ************************************
+
+// Display faux mstile
+
+.sg-ms-favicon {
+	display: inline-block;
+	background-color: $joy949_blue;
+	background-image: linear-gradient(to right, rgb(13, 84, 147) 0%, rgb(15, 101, 177) 100%);
+}
+
+	.sg-ms-favicon > img {
+		display: block;
+	}
