@@ -91,7 +91,8 @@ module.exports = function(grunt) {
 			options: grunt.file.readJSON('.jshintrc'),
 			files: [
 				'source/assets/js/*.js',
-				'!source/assets/js/fontfaceobserver.js'
+				'!source/assets/js/fontfaceobserver.js',
+				'!source/assets/js/svgxuse.min.js'
 			]
 		},
 
