@@ -47,4 +47,14 @@
 	background: url(../images/patternlab/joy949-background-tiles.gif);
 }
 
+.sg-ms-favicon {
+	display: inline-block;
+	background-color: #0f63ae;
+	background-image: linear-gradient(to right, #0d5493 0%, #0f65b1 100%);
+}
+
+.sg-ms-favicon > img {
+	display: block;
+}
+
 /*# sourceMappingURL=patternlab.css.map */
