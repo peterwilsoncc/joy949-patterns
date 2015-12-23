@@ -701,11 +701,81 @@ th, td {
 	padding: .5rem 1rem;
 }
 
+.Btn, .button,
+.Btn:visited,
+.button:visited {
+	color: white;
+	background-color: #0f63ae;
+	line-height: inherit;
+	text-decoration: none;
+	display: inline-block;
+	padding: 0.75em;
+	outline: 0;
+	border: 0;
+	border-radius: 3px;
+}
+
+.Btn:hover, .button:hover,
+.Btn:focus,
+.button:focus,
+.Btn:active,
+.button:active {
+	background-color: black;
+	text-decoration: none;
+}
+
+.Btn[disabled], [disabled].button,
+.Btn[disabled]:visited,
+[disabled].button:visited {
+	color: white;
+	background-color: #87b1d7;
+	cursor: default;
+	pointer-events: none;
+}
+
+.Btn-Alt,
+.Btn-Alt:visited {
+	background-color: #57a957;
+}
+
+.Btn-Alt[disabled],
+.Btn-Alt[disabled]:visited {
+	color: white;
+	background-color: #abd4ab;
+}
+
+.Btn-Block,
+.Btn-Block:visited,
+.Btn-Block:hover,
+.Btn-Block:focus,
+.Btn-Block:active {
+	display: block;
+	width: 100%;
+	text-align: center;
+}
+
+.Btn-Pill {
+	border-radius: 0;
+	border-right: 1px solid;
+}
+
+.Btn-Pill:first-child {
+	border-top-left-radius: 3px;
+	border-bottom-left-radius: 3px;
+}
+
+.Btn-Pill:last-child {
+	border-top-right-radius: 3px;
+	border-bottom-right-radius: 3px;
+	border-right: 0;
+}
+
 .Icon {
 	display: inline-block;
 	width: 1em;
 	height: 1em;
 	fill: currentColor;
+	margin-bottom: -0.1em;
 }
 
 /* =======================================================================================

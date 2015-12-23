@@ -1,0 +1,92 @@
+// ************************************
+// Buttons
+// ************************************
+
+$joy949-Btn_color             : white;
+$joy949-Btn_background        : $joy949_blue;
+$joy949-Btn_background-focus  : black;
+
+
+$joy949-Btn-Alt_color             : white;
+$joy949-Btn-Alt_background        : $joy949_green;
+
+
+// Includes <inputs>,<buttons> and <a> faux buttons.
+// The proper class is .Btn but alias with .button to allow
+// for gravity forms to do its thing.
+
+.Btn,
+.Btn:visited {
+	color: $joy949-Btn_color;
+	background-color: $joy949-Btn_background;
+
+	line-height: inherit;
+	text-decoration: none;
+
+	display: inline-block;
+	padding: 0.75em;
+	outline: 0;
+	border: 0;
+	border-radius: 3px;
+}
+
+	.Btn:hover,
+	.Btn:focus,
+	.Btn:active {
+		background-color: $joy949-Btn_background-focus;
+		text-decoration: none;
+	}
+
+
+	.Btn[disabled],
+	.Btn[disabled]:visited {
+//		opacity: .5;
+		color: mix( $joy949-Btn_color, white, 50% );
+		background-color: mix( $joy949-Btn_background, white, 50% );
+		cursor: default;
+		pointer-events: none;
+	}
+
+	.Btn-Alt,
+	.Btn-Alt:visited {
+		background-color: $joy949-Btn-Alt_background;
+	}
+
+		.Btn-Alt[disabled],
+		.Btn-Alt[disabled]:visited {
+			color: mix( $joy949-Btn-Alt_color, white, 50% );
+			background-color: mix( $joy949-Btn-Alt_background, white, 50% );
+		}
+
+
+	.Btn-Block,
+	.Btn-Block:visited,
+	.Btn-Block:hover,
+	.Btn-Block:focus,
+	.Btn-Block:active {
+		display: block;
+		width: 100%;
+		text-align: center;
+	}
+
+	.Btn-Pill {
+		border-radius: 0;
+		border-right: 1px solid;
+	}
+
+	.Btn-Pill:first-child {
+		border-top-left-radius: 3px;
+		border-bottom-left-radius: 3px;
+	}
+
+	.Btn-Pill:last-child {
+		border-top-right-radius: 3px;
+		border-bottom-right-radius: 3px;
+		border-right: 0;
+	}
+
+
+.button {
+	// For the benefit of gravity forms.
+	@extend .Btn;
+}

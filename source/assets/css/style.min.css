@@ -217,11 +217,6 @@ table,
 ul {
 margin-bottom:.625rem;
 }
-.Logo,
-li>ol,
-li>ul {
-margin-bottom:0;
-}
 dd,
 ol,
 ul {
@@ -334,6 +329,10 @@ a:active,
 a:focus,
 a:hover {
 text-decoration:underline;
+}
+li>ol,
+li>ul {
+margin-bottom:0;
 }
 .h1,
 .h2,
@@ -459,10 +458,74 @@ padding:.5rem 1rem;
 text-align:left;
 vertical-align:top;
 }
+.Btn,
+.Btn:visited,
+.button,
+.button:visited {
+color:#fff;
+background-color:#0f63ae;
+line-height:inherit;
+display:inline-block;
+padding:.75em;
+text-decoration:none;
+border:0;
+border-radius:3px;
+outline:0;
+}
+.Btn:active,
+.Btn:focus,
+.Btn:hover,
+.button:active,
+.button:focus,
+.button:hover {
+background-color:#000;
+text-decoration:none;
+}
+.Btn[disabled],
+.Btn[disabled]:visited,
+[disabled].button,
+[disabled].button:visited {
+color:#fff;
+background-color:#87b1d7;
+cursor:default;
+pointer-events:none;
+}
+.Btn-Alt,
+.Btn-Alt:visited {
+background-color:#57a957;
+}
+.Btn-Alt[disabled],
+.Btn-Alt[disabled]:visited {
+color:#fff;
+background-color:#abd4ab;
+}
+.Btn-Block,
+.Btn-Block:active,
+.Btn-Block:focus,
+.Btn-Block:hover,
+.Btn-Block:visited {
+display:block;
+width:100%;
+text-align:center;
+}
+.Btn-Pill {
+border-right:1px solid;
+border-radius:0;
+}
+.Btn-Pill:first-child {
+border-top-left-radius:3px;
+border-bottom-left-radius:3px;
+}
+.Btn-Pill:last-child {
+border-right:0;
+border-top-right-radius:3px;
+border-bottom-right-radius:3px;
+}
 .Icon {
 display:inline-block;
 width:1em;
 height:1em;
+margin-bottom:-.1em;
 
 fill:currentColor;
 }
@@ -514,6 +577,7 @@ width:.587890625em;
 display:block;
 width:230px;
 max-width:100%;
+margin-bottom:0;
 margin-left:0;
 }
 .Logo_Path {
