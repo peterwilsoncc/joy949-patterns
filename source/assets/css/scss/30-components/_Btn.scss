@@ -47,6 +47,18 @@ $joy949-Btn-Alt_background        : $joy949_green;
 		pointer-events: none;
 	}
 
+	.Btn-Alt,
+	.Btn-Alt:visited {
+		background-color: $joy949-Btn-Alt_background;
+	}
+
+		.Btn-Alt[disabled],
+		.Btn-Alt[disabled]:visited {
+			color: mix( $joy949-Btn-Alt_color, white, 50% );
+			background-color: mix( $joy949-Btn-Alt_background, white, 50% );
+		}
+
+
 	.Btn-Block,
 	.Btn-Block:visited,
 	.Btn-Block:hover,
