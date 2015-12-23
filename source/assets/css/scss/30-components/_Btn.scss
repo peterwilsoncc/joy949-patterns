@@ -47,6 +47,16 @@ $joy949-Btn-Alt_background        : $joy949_green;
 		pointer-events: none;
 	}
 
+	.Btn-Block,
+	.Btn-Block:visited,
+	.Btn-Block:hover,
+	.Btn-Block:focus,
+	.Btn-Block:active {
+		display: block;
+		width: 100%;
+		text-align: center;
+	}
+
 .button {
 	// For the benefit of gravity forms.
 	@extend .Btn;

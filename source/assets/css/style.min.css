@@ -491,6 +491,15 @@ background-color:#87b1d7;
 cursor:default;
 pointer-events:none;
 }
+.Btn-Block,
+.Btn-Block:active,
+.Btn-Block:focus,
+.Btn-Block:hover,
+.Btn-Block:visited {
+display:block;
+width:100%;
+text-align:center;
+}
 .Icon {
 display:inline-block;
 width:1em;

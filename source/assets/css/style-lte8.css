@@ -689,6 +689,16 @@ th, td {
 	pointer-events: none;
 }
 
+.Btn-Block,
+.Btn-Block:visited,
+.Btn-Block:hover,
+.Btn-Block:focus,
+.Btn-Block:active {
+	display: block;
+	width: 100%;
+	text-align: center;
+}
+
 .Icon {
 	display: inline-block;
 	width: 1em;
