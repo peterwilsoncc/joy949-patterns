@@ -304,6 +304,11 @@ list-style:none;
 content:' ';
 display:table;
 }
+.Btn,
+.Icon,
+.button {
+display:inline-block;
+}
 .gfield_checkbox li:after,
 .gfield_radio li:after {
 clear:both;
@@ -460,7 +465,6 @@ text-align:left;
 vertical-align:top;
 }
 .Icon {
-display:inline-block;
 width:1em;
 height:1em;
 

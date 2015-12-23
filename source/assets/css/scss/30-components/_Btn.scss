@@ -1,0 +1,17 @@
+// ************************************
+// Buttons
+// ************************************
+
+// Includes <inputs>,<buttons> and <a> faux buttons.
+// The proper class is .Btn but alias with .button to allow
+// for gravity fields to do it's thing.
+
+.Btn {
+	display: inline-block;
+}
+
+
+.button {
+	// For the benefit of gravity forms.
+	@extend .Btn;
+}

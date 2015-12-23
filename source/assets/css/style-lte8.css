@@ -657,6 +657,10 @@ th, td {
 	padding: .5rem 1rem;
 }
 
+.Btn, .button {
+	display: inline-block;
+}
+
 .Icon {
 	display: inline-block;
 	width: 1em;
