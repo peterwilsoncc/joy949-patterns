@@ -208,11 +208,6 @@ table,
 ul {
 margin-bottom:.625rem;
 }
-.Logo,
-li>ol,
-li>ul {
-margin-bottom:0;
-}
 dd,
 ol,
 ul {
@@ -328,6 +323,10 @@ a:active,
 a:focus,
 a:hover {
 text-decoration:underline;
+}
+li>ol,
+li>ul {
+margin-bottom:0;
 }
 .h1,
 .h2,
@@ -462,6 +461,7 @@ border-bottom-right-radius:3px;
 display:inline-block;
 width:1em;
 height:1em;
+margin-bottom:-.1em;
 
 fill:currentColor;
 }
@@ -513,6 +513,7 @@ width:.587890625em;
 display:block;
 width:230px;
 max-width:100%;
+margin-bottom:0;
 margin-left:0;
 }
 .Logo_Path {
