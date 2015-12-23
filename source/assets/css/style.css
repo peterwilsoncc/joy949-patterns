@@ -743,6 +743,22 @@ th, td {
 	text-align: center;
 }
 
+.Btn-Pill {
+	border-radius: 0;
+	border-right: 1px solid;
+}
+
+.Btn-Pill:first-child {
+	border-top-left-radius: 3px;
+	border-bottom-left-radius: 3px;
+}
+
+.Btn-Pill:last-child {
+	border-top-right-radius: 3px;
+	border-bottom-right-radius: 3px;
+	border-right: 0;
+}
+
 .Icon {
 	display: inline-block;
 	width: 1em;

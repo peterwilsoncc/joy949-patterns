@@ -436,6 +436,19 @@ display:block;
 width:100%;
 text-align:center;
 }
+.Btn-Pill {
+border-right:1px solid;
+border-radius:0;
+}
+.Btn-Pill:first-child {
+border-top-left-radius:3px;
+border-bottom-left-radius:3px;
+}
+.Btn-Pill:last-child {
+border-right:0;
+border-top-right-radius:3px;
+border-bottom-right-radius:3px;
+}
 .Icon {
 display:inline-block;
 width:1em;
