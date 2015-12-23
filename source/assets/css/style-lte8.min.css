@@ -306,11 +306,6 @@ list-style:none;
 content:' ';
 display:table;
 }
-.Btn,
-.Icon,
-.button {
-display:inline-block;
-}
 .gfield_checkbox li:after,
 .gfield_radio li:after {
 clear:both;
@@ -400,7 +395,40 @@ padding:.5rem 1rem;
 text-align:left;
 vertical-align:top;
 }
+.Btn,
+.Btn:visited,
+.button,
+.button:visited {
+color:#fff;
+background-color:#0f63ae;
+line-height:inherit;
+display:inline-block;
+padding:.75em;
+text-decoration:none;
+border:0;
+border-radius:3px;
+outline:0;
+}
+.Btn:active,
+.Btn:focus,
+.Btn:hover,
+.button:active,
+.button:focus,
+.button:hover {
+background-color:#000;
+text-decoration:none;
+}
+.Btn[disabled],
+.Btn[disabled]:visited,
+[disabled].button,
+[disabled].button:visited {
+color:#fff;
+background-color:#87b1d7;
+cursor:default;
+pointer-events:none;
+}
 .Icon {
+display:inline-block;
 width:1em;
 height:1em;
 

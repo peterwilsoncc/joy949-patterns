@@ -657,8 +657,36 @@ th, td {
 	padding: .5rem 1rem;
 }
 
-.Btn, .button {
+.Btn, .button,
+.Btn:visited,
+.button:visited {
+	color: white;
+	background-color: #0f63ae;
+	line-height: inherit;
+	text-decoration: none;
 	display: inline-block;
+	padding: 0.75em;
+	outline: 0;
+	border: 0;
+	border-radius: 3px;
+}
+
+.Btn:hover, .button:hover,
+.Btn:focus,
+.button:focus,
+.Btn:active,
+.button:active {
+	background-color: black;
+	text-decoration: none;
+}
+
+.Btn[disabled], [disabled].button,
+.Btn[disabled]:visited,
+[disabled].button:visited {
+	color: white;
+	background-color: #87b1d7;
+	cursor: default;
+	pointer-events: none;
 }
 
 .Icon {

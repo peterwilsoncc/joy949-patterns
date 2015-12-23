@@ -1,6 +1,6 @@
 <p>
-	<input type="submit" class="Btn button" value="input[submit]" />
-	<input type="reset" class="Btn button" value="input[reset]" />
-	<button class="Btn button">button</button>
-	<a href="#" class="Btn button">a.button</a>
+	<input type="submit" {{# Btn.disabled }}disabled{{/ Btn.disabled }} class="Btn button" value="input[submit]" />
+	<input type="reset" {{# Btn.disabled }}disabled{{/ Btn.disabled }} class="Btn button" value="input[reset]" />
+	<button class="Btn button" {{# Btn.disabled }}disabled{{/ Btn.disabled }}>button</button>
+	<a href="#" class="Btn button" {{# Btn.disabled }}disabled{{/ Btn.disabled }}>a.button</a>
 </p>

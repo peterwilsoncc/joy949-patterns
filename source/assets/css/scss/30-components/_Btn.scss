@@ -2,14 +2,50 @@
 // Buttons
 // ************************************
 
+$joy949-Btn_color             : white;
+$joy949-Btn_background        : $joy949_blue;
+$joy949-Btn_background-focus  : black;
+
+
+$joy949-Btn-Alt_color             : white;
+$joy949-Btn-Alt_background        : $joy949_green;
+
+
 // Includes <inputs>,<buttons> and <a> faux buttons.
 // The proper class is .Btn but alias with .button to allow
-// for gravity fields to do it's thing.
+// for gravity forms to do its thing.
 
-.Btn {
+.Btn,
+.Btn:visited {
+	color: $joy949-Btn_color;
+	background-color: $joy949-Btn_background;
+
+	line-height: inherit;
+	text-decoration: none;
+
 	display: inline-block;
+	padding: 0.75em;
+	outline: 0;
+	border: 0;
+	border-radius: 3px;
 }
 
+	.Btn:hover,
+	.Btn:focus,
+	.Btn:active {
+		background-color: $joy949-Btn_background-focus;
+		text-decoration: none;
+	}
+
+
+	.Btn[disabled],
+	.Btn[disabled]:visited {
+//		opacity: .5;
+		color: mix( $joy949-Btn_color, white, 50% );
+		background-color: mix( $joy949-Btn_background, white, 50% );
+		cursor: default;
+		pointer-events: none;
+	}
 
 .button {
 	// For the benefit of gravity forms.

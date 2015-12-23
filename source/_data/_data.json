@@ -3,6 +3,9 @@
 	"title" : "JOY 94.9 Pattern Library",
 	"htmlClass": "pl",
 	"bodyClass": "body",
+	"Btn": {
+		"disabled" : false
+	},
 	"img": {
 		"feature-image": {
 			"src": "../../assets/images/patternlab/images/feature-image-750x400.png",
