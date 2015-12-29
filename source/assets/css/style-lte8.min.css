@@ -236,6 +236,19 @@ font-family:'Open Sans',sans-serif;
 .wf-oswald-n4-active h6 {
 font-family:Oswald,Impact,Haettenschweiler,'Franklin Gothic Bold',Charcoal,'Helvetica Inserat','Bitstream Vera Sans Bold','Arial Black',sans-serif;
 }
+blockquote {
+color:#777;
+margin-left:.75em;
+padding-right:1em;
+padding-left:1em;
+border-left:1px solid #f1f1f1;
+}
+.blockquote>:first-child {
+margin-top:0;
+}
+.blockquote>:last-child {
+margin-bottom:0;
+}
 *,
 :after,
 :before {
