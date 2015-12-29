@@ -26,6 +26,10 @@ input[type=range],
 select {
 width:97%;
 }
+.Logo,
+img {
+max-width:100%;
+}
 html {
 font-family:sans-serif;
 
@@ -84,6 +88,9 @@ top:-.5em;
 }
 sub {
 bottom:-.25em;
+}
+img {
+height:auto;
 }
 svg:not(:root) {
 overflow:hidden;
@@ -576,7 +583,6 @@ width:.587890625em;
 .Logo {
 display:block;
 width:230px;
-max-width:100%;
 margin-bottom:0;
 margin-left:0;
 }
