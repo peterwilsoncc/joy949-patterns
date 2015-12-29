@@ -220,20 +220,6 @@ ol,
 ul {
 margin-left:2rem;
 }
-*,
-:after,
-:before {
-box-sizing:inherit;
-}
-html {
-box-sizing:border-box;
-}
-hr,
-input[type=checkbox],
-input[type=radio],
-input[type=search] {
-box-sizing:inherit;
-}
 body {
 font-family:sans-serif;
 line-height:1.75;
@@ -249,6 +235,20 @@ font-family:'Open Sans',sans-serif;
 .wf-oswald-n4-active h5,
 .wf-oswald-n4-active h6 {
 font-family:Oswald,Impact,Haettenschweiler,'Franklin Gothic Bold',Charcoal,'Helvetica Inserat','Bitstream Vera Sans Bold','Arial Black',sans-serif;
+}
+*,
+:after,
+:before {
+box-sizing:inherit;
+}
+html {
+box-sizing:border-box;
+}
+hr,
+input[type=checkbox],
+input[type=radio],
+input[type=search] {
+box-sizing:inherit;
 }
 label {
 font-size:.875em;

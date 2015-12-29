@@ -434,23 +434,6 @@ ul, ol, dd {
 	margin-left: 2rem;
 }
 
-*,
-*:before,
-*:after {
-	box-sizing: inherit;
-}
-
-html {
-	box-sizing: border-box;
-}
-
-hr,
-input[type="search"],
-input[type="checkbox"],
-input[type="radio"] {
-	box-sizing: inherit;
-}
-
 body {
 	font-family: sans-serif;
 	line-height: 1.75;
@@ -466,6 +449,23 @@ h1, h2, h3, h4, h5, h6 {
 
 .wf-oswald-n4-active h1, .wf-oswald-n4-active h2, .wf-oswald-n4-active h3, .wf-oswald-n4-active h4, .wf-oswald-n4-active h5, .wf-oswald-n4-active h6 {
 	font-family: "Oswald", Impact, Haettenschweiler, "Franklin Gothic Bold", Charcoal, "Helvetica Inserat", "Bitstream Vera Sans Bold", "Arial Black", sans-serif;
+}
+
+*,
+*:before,
+*:after {
+	box-sizing: inherit;
+}
+
+html {
+	box-sizing: border-box;
+}
+
+hr,
+input[type="search"],
+input[type="checkbox"],
+input[type="radio"] {
+	box-sizing: inherit;
 }
 
 label {

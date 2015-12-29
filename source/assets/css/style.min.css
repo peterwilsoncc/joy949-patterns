@@ -229,9 +229,6 @@ ol,
 ul {
 margin-left:2rem;
 }
-html {
-box-sizing:border-box;
-}
 body {
 font-family:sans-serif;
 line-height:1.75;
@@ -247,6 +244,9 @@ font-family:'Open Sans',sans-serif;
 .wf-oswald-n4-active h5,
 .wf-oswald-n4-active h6 {
 font-family:Oswald,Impact,Haettenschweiler,'Franklin Gothic Bold',Charcoal,'Helvetica Inserat','Bitstream Vera Sans Bold','Arial Black',sans-serif;
+}
+html {
+box-sizing:border-box;
 }
 label {
 font-size:.875em;
