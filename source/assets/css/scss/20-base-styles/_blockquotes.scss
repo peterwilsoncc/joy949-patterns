@@ -1,0 +1,29 @@
+// ************************************
+// Blockquotes
+// ************************************
+
+
+$joy949-blockquote_color: $joy949_grey7;
+$joy949-blockquote_border-color: $joy949_offwhite;
+
+// Stanadard blockquote styles.
+// Need to account for:
+//   - blockquote (no nested elements)
+//   - blockquote (nested element, p, lists, whatever)
+
+blockquote {
+	color: $joy949-blockquote_color;
+	border-left: 1px solid $joy949-blockquote_border-color;
+	margin-left: 0.75em;
+	padding-left: 1em;
+	padding-right: 1em;
+}
+
+	// Collapsing margins are beautiful thing but not worth relying on.
+	.blockquote > :first-child {
+		margin-top: 0;
+	}
+
+	.blockquote > :last-child {
+		margin-bottom: 0;
+	}

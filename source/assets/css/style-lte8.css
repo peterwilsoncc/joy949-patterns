@@ -451,6 +451,22 @@ h1, h2, h3, h4, h5, h6 {
 	font-family: "Oswald", Impact, Haettenschweiler, "Franklin Gothic Bold", Charcoal, "Helvetica Inserat", "Bitstream Vera Sans Bold", "Arial Black", sans-serif;
 }
 
+blockquote {
+	color: #777;
+	border-left: 1px solid #f1f1f1;
+	margin-left: 0.75em;
+	padding-left: 1em;
+	padding-right: 1em;
+}
+
+.blockquote > :first-child {
+	margin-top: 0;
+}
+
+.blockquote > :last-child {
+	margin-bottom: 0;
+}
+
 *,
 *:before,
 *:after {
