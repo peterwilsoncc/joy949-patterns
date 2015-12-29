@@ -4,9 +4,11 @@
 
 
 table {
+	@include clearfix();
 	width: 100%;
 	border-collapse: collapse;
 	border: 1px solid;
+	overflow: scroll;
 }
 
 	th,td {
@@ -16,3 +18,79 @@ table {
 		/* different paddingto allow for line hiehht */
 		padding: .5rem 1rem;
 	}
+
+
+// Responsive tables
+// source: http://dbushell.com/2012/01/05/responsive-tables-2/
+// via: http://elvery.net/demo/responsive-tables/
+
+// this is the non-JavaScript version of Sidebyside tables.
+
+@media (max-width : 30em ) {
+
+	table {
+		display: block;
+		position: relative;
+		width: 100%;
+	}
+
+	thead {
+		display: block;
+		float: left;
+	}
+		thead tr {
+			display: block;
+		}
+
+	tbody {
+		display: block;
+		width: auto;
+		position: relative;
+		overflow-x: auto;
+		white-space: nowrap;
+	}
+		tbody tr {
+			display: inline-block;
+			vertical-align: top;
+		}
+
+	tfoot {
+		display: block;
+		float: right;
+	}
+
+	th {
+		display: block;
+		text-align: right;
+	}
+
+	td {
+		display: block;
+		min-height: 1.25em;
+		text-align: left;
+	}
+
+
+	/* sort out borders */
+
+	th {
+		border-bottom: 0;
+		border-left: 0;
+	}
+
+	td {
+		border-left: 0;
+		border-right: 0;
+		border-bottom: 0;
+	}
+
+	tbody tr {
+		border-left: 1px solid;
+	}
+
+	th:last-child,
+	td:last-child {
+		border-bottom: 1px solid;
+	}
+
+}
