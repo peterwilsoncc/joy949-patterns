@@ -562,6 +562,11 @@ select {
 	width: 97%;
 }
 
+img {
+	max-width: 100%;
+	height: auto;
+}
+
 a,
 a:visited {
 	color: #d72c90;
