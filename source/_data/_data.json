@@ -96,6 +96,7 @@
 		"first-name": "Author",
 		"last-name": "Name"
 	},
+	"programme-name" : "Hide and Seek",
 	"hero": true,
 	"emergency" : false,
 	"touts" : [
