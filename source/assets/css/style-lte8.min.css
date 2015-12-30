@@ -536,6 +536,10 @@ border-right:0;
 border-top-right-radius:3px;
 border-bottom-right-radius:3px;
 }
+.EntryMeta {
+color:#777;
+font-size:.875rem;
+}
 .Icon {
 display:inline-block;
 width:1em;

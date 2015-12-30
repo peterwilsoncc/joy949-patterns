@@ -857,6 +857,11 @@ th, td {
 	border-right: 0;
 }
 
+.EntryMeta {
+	color: #777;
+	font-size: 0.875rem;
+}
+
 .Icon {
 	display: inline-block;
 	width: 1em;
