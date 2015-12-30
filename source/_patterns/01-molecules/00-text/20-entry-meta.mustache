@@ -1,0 +1,35 @@
+<div class="EntryMeta">
+	<span class="EntryMeta_Detail">
+		{{> atoms-time }}
+	</span>
+
+	{{^ hide-author }}
+	<span class="EntryMeta_Detail">
+		by
+		<span class="author vcard h-card"><a href="#" class="url fn u-url p-name">{{ author.first-name }} {{ author.last-name }}</a></span>
+	</span>
+	{{/ hide-author }}
+
+	{{^ hide-programme }}
+	<span class="EntryMeta_Detail">
+		&mdash;
+		From <a href="#" class="p-category" rel="tag category">{{ programme-name }}</a>
+	</span>
+	{{/ hide-programme }}
+
+	{{^ hide-categories }}
+	<span class="EntryMeta_Detail">
+		&mdash;
+		<a href="#" class="p-category" rel="tag category">Station Highlights</a>,
+		<a href="#" class="p-category" rel="tag category">Annual General Meetings</a>
+	</span>
+	{{/ hide-categories }}
+
+	{{^ hide-tags }}
+	<span class="EntryMeta_Detail">
+		&mdash;
+		<a href="#" class="p-category" rel="tag">Meetings</a>,
+		<a href="#" class="p-category" rel="tag">Management</a>
+	</span>
+	{{/ hide-tags }}
+</div>
