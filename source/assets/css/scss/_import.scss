@@ -45,9 +45,14 @@
 // they do not need to be imported here but should be noted.
 
 @import "30-components/Btn";
+// @import "30-components/dt"; // reserve dt- namespace for microformats 2
+@import "30-components/EntryMeta";
+// @import "30-components/h"; // reserve h- namespace for microformats 2
 @import "30-components/Icon";
 @import "30-components/Logo";
-// @import "30-components/u"; // reserve u- namespace for utility classes
+// @import "30-components/p"; // reserve p- namespace for microformats 2
+// @import "30-components/u"; // reserve u- namespace for microformats 2
+// @import "30-components/util"; // reserve util- namespace for utilitiy classes
 
 
 

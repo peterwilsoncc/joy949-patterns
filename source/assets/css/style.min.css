@@ -593,6 +593,10 @@ border-right:0;
 border-top-right-radius:3px;
 border-bottom-right-radius:3px;
 }
+.EntryMeta {
+color:#777;
+font-size:.875rem;
+}
 .Icon {
 display:inline-block;
 width:1em;
@@ -662,24 +666,24 @@ fill:#d72c90;
 .Logo_Shadow {
 fill:#fff;
 }
-.u-Font-Primary {
+.util-Font-Primary {
 font-family:sans-serif!important;
 }
-.wf-opensans-n4-active .u-Font-Primary {
+.wf-opensans-n4-active .util-Font-Primary {
 font-family:'Open Sans',sans-serif!important;
 }
-.u-Font-Secondary,
-.u-Font-Secondery {
+.util-Font-Secondary,
+.util-Font-Secondery {
 font-family:Impact,Haettenschweiler,'Franklin Gothic Bold',Charcoal,'Helvetica Inserat','Bitstream Vera Sans Bold','Arial Black',sans-serif!important;
 }
-.wf-oswald-n4-active .u-Font-Secondary,
-.wf-oswald-n4-active .u-Font-Secondery {
+.wf-oswald-n4-active .util-Font-Secondary,
+.wf-oswald-n4-active .util-Font-Secondery {
 font-family:Oswald,Impact,Haettenschweiler,'Franklin Gothic Bold',Charcoal,'Helvetica Inserat','Bitstream Vera Sans Bold','Arial Black',sans-serif!important;
 }
-.u-List-Inline {
+.util-List-Inline {
 margin-left:0;
 list-style:none;
 }
-.u-List-Inline>li {
+.util-List-Inline>li {
 display:inline-block;
 }
