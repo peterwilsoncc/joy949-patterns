@@ -958,30 +958,30 @@ Example showing how to change the color/size of the icons:
 	fill: #fff;
 }
 
-.u-Font-Primary {
+.util-Font-Primary {
 	font-family: sans-serif !important;
 }
 
-.wf-opensans-n4-active .u-Font-Primary {
+.wf-opensans-n4-active .util-Font-Primary {
 	font-family: "Open Sans", sans-serif !important;
 }
 
-.u-Font-Secondary,
-.u-Font-Secondery {
+.util-Font-Secondary,
+.util-Font-Secondery {
 	font-family: Impact, Haettenschweiler, "Franklin Gothic Bold", Charcoal, "Helvetica Inserat", "Bitstream Vera Sans Bold", "Arial Black", sans-serif !important;
 }
 
-.wf-oswald-n4-active .u-Font-Secondary, .wf-oswald-n4-active
-.u-Font-Secondery {
+.wf-oswald-n4-active .util-Font-Secondary, .wf-oswald-n4-active
+.util-Font-Secondery {
 	font-family: "Oswald", Impact, Haettenschweiler, "Franklin Gothic Bold", Charcoal, "Helvetica Inserat", "Bitstream Vera Sans Bold", "Arial Black", sans-serif !important;
 }
 
-.u-List-Inline {
+.util-List-Inline {
 	list-style: none;
 	margin-left: 0;
 }
 
-.u-List-Inline > li {
+.util-List-Inline > li {
 	display: inline-block;
 }
 
